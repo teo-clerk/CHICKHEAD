@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dckl2ky5y7pv0"]
+
+[ext_resource type="Texture2D" uid="uid://pcr11yc3sdco" path="res://Resources/Captura de pantalla 2024-02-29 093214.png" id="1_qccse"]
+
+[node name="Interfaz" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_qccse")
