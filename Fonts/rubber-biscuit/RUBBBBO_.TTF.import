@@ -2,7 +2,11 @@
 
 importer="font_data_dynamic"
 type="FontFile"
+<<<<<<< HEAD
 uid="uid://bgugstq4mfxmt"
+=======
+uid="uid://blv6bkpeolcxs"
+>>>>>>> 273c84ed793238f87630b7f11985833b2b924a8d
 path="res://.godot/imported/RUBBBBO_.TTF-311e8d8b2c70c5df2050b768ed907a59.fontdata"
 
 [deps]

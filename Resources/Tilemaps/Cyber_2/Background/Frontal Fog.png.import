@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://dhyasjicy1l4n"
+=======
+uid="uid://bmrhy5ok3l57g"
+>>>>>>> 273c84ed793238f87630b7f11985833b2b924a8d
 path="res://.godot/imported/Frontal Fog.png-ee79ff1cddeb224e9276206547bb81ec.ctex"
 metadata={
 "vram_texture": false
