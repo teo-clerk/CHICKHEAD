@@ -2,7 +2,11 @@
 
 importer="font_data_dynamic"
 type="FontFile"
+<<<<<<< HEAD
+uid="uid://p3nq8vewdh7o"
+=======
 uid="uid://vjkyddfw6462"
+>>>>>>> 273c84ed793238f87630b7f11985833b2b924a8d
 path="res://.godot/imported/8blimro.ttf-265471d9f97ba708e1b5e0f4ca6bf4ff.fontdata"
 
 [deps]
