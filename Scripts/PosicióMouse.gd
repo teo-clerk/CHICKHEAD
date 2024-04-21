@@ -1,8 +1,8 @@
 extends Node
 
-var posi
-var posf
-var vpos
+var posi :Vector2
+var posf :Vector2
+var vpos :Vector2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
