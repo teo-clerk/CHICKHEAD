@@ -1,2 +1,2 @@
-var vpos
+var VEL
 
