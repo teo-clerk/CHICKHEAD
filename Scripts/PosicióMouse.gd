@@ -23,3 +23,4 @@ func _process(delta):
 			vpos[0] = vpos[0] * 255 / vpos[1]
 			vpos[1] = 255
 		Global.VEL = vpos
+		print(Global.VEL)
