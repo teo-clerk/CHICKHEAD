@@ -322,12 +322,15 @@ radius = 17.0
 height = 60.0
 
 [node name="Jugador" type="CharacterBody2D"]
+texture_filter = 1
 script = ExtResource("1_404o0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_ncwe4")
 animation = &"normal"
-frame_progress = 0.236319
+autoplay = "normal"
+frame_progress = 0.19608
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 14)
