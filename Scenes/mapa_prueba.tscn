@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://ccjrpgi7gsych"]
+[gd_scene load_steps=10 format=3 uid="uid://ccjrpgi7gsych"]
 
+[ext_resource type="Script" path="res://Scripts/Global.gd" id="1_4m84l"]
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="1_cffki"]
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="2_lt1oy"]
 [ext_resource type="Texture2D" uid="uid://b0yvvr2xjlodn" path="res://Resources/Tilemaps/Cyber_2/Assets/Props-01.png" id="3_yu3bf"]
+[ext_resource type="PackedScene" uid="uid://02jh3acqyvcw" path="res://Scenes/PosicióMouse.tscn" id="5_mqykw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("1_cffki")
@@ -1332,9 +1334,13 @@ sources/1 = SubResource("TileSetAtlasSource_8jcx1")
 sources/2 = SubResource("TileSetAtlasSource_m8n7f")
 
 [node name="MapaPrueba" type="Node2D"]
+script = ExtResource("1_4m84l")
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(3, 3)
 tile_set = SubResource("TileSet_vsbjv")
 format = 2
 layer_0/tile_data = PackedInt32Array(589824, 0, 2, 655360, 0, 3, 589825, 65536, 2, 655361, 65536, 3, 589826, 0, 2, 655362, 0, 3, 589827, 65536, 2, 655363, 65536, 3, 589828, 0, 2, 655364, 0, 3, 589829, 65536, 2, 655365, 65536, 3, 589830, 0, 2, 655366, 0, 3, 589831, 65536, 2, 655367, 65536, 3, 589832, 0, 2, 655368, 0, 3, 589833, 65536, 2, 655369, 65536, 3, 589834, 0, 2, 655370, 0, 3, 589835, 65536, 2, 655371, 65536, 3, 589836, 0, 2, 655372, 0, 3, 589837, 65536, 2, 655373, 65536, 3, 589838, 0, 2, 655374, 0, 3, 589839, 65536, 2, 655375, 65536, 3, 589840, 0, 2, 655376, 0, 3, 589841, 65536, 2, 655377, 65536, 3, 589842, 0, 2, 655378, 0, 3, 589843, 65536, 2, 655379, 65536, 3, 65534, 0, 2, 131070, 0, 3, 65535, 65536, 2, 131071, 65536, 3, 196606, 0, 2, 262142, 0, 3, 196607, 65536, 2, 262143, 65536, 3, 327678, 0, 2, 393214, 0, 3, 327679, 65536, 2, 393215, 65536, 3, 458750, 0, 2, 524286, 0, 3, 458751, 65536, 2, 524287, 65536, 3, 589822, 0, 2, 655358, 0, 3, 589823, 65536, 2, 655359, 65536, 3, 524308, 0, 2, 589844, 0, 3, 524309, 65536, 2, 589845, 65536, 3, 393236, 0, 2, 458772, 0, 3, 393237, 65536, 2, 458773, 65536, 3, 262164, 0, 2, 327700, 0, 3, 262165, 65536, 2, 327701, 65536, 3, 131092, 0, 2, 196628, 0, 3, 131093, 65536, 2, 196629, 65536, 3, 20, 0, 2, 65556, 0, 3, 21, 65536, 2, 65557, 65536, 3)
+
+[node name="PosicióMouse" parent="." instance=ExtResource("5_mqykw")]
+position = Vector2(-2, -4)
