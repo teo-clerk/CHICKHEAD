@@ -6,7 +6,7 @@
 
 [node name="Contador" type="Node2D"]
 
-[node name="Label" type="Label" parent="."]
+[node name="Puntuació" type="Label" parent="."]
 texture_filter = 1
 offset_left = 28.0
 offset_top = -38.0
@@ -17,6 +17,6 @@ theme_override_font_sizes/font_size = 71
 text = "0"
 script = ExtResource("2_r8e0w")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Icona" type="Sprite2D" parent="."]
 position = Vector2(-39, 8)
 texture = ExtResource("2_i1k8n")
