@@ -339,5 +339,5 @@ position = Vector2(0, 8)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_ojg71")
 
-[node name="Line2D" type="Line2D" parent="."]
+[node name="LineaPredictòria" type="Line2D" parent="."]
 script = ExtResource("5_wbhol")
