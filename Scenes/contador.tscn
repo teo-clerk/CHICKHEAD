@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bno5nenp1iro" path="res://Resources/monedes/moneda normal/pixil-frame-0.png" id="2_i1k8n"]
 [ext_resource type="Script" path="res://Scripts/contador.gd" id="2_r8e0w"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Contador" type="Node2D"]
 
 [node name="Label" type="Label" parent="."]
 texture_filter = 1
