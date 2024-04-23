@@ -320,7 +320,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ojg71"]
 radius = 11.0
-height = 44.0
+height = 38.0
 
 [node name="Jugador" type="CharacterBody2D"]
 texture_filter = 1
@@ -339,5 +339,5 @@ position = Vector2(0, 8)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_ojg71")
 
-[node name="LineaPredictòria" type="Line2D" parent="."]
+[node name="LineaPredictora" type="Line2D" parent="."]
 script = ExtResource("5_wbhol")
