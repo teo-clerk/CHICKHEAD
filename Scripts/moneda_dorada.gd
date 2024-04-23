@@ -13,3 +13,4 @@ func _process(delta):
 
 func _on_body_entered(body):
 	Global.monedes += 3
+	queue_free()
