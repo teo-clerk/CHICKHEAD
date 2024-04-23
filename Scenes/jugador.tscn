@@ -1,9 +1,10 @@
-[gd_scene load_steps=49 format=3 uid="uid://bwppkoqx0wytc"]
+[gd_scene load_steps=50 format=3 uid="uid://bwppkoqx0wytc"]
 
 [ext_resource type="Script" path="res://Scripts/Jugador.gd" id="1_404o0"]
 [ext_resource type="Texture2D" uid="uid://bqp36atvjhh18" path="res://Resources/Personatge/Gallinadisparada/disparat.png" id="2_jhftw"]
 [ext_resource type="Texture2D" uid="uid://d0h23texhratm" path="res://Resources/Personatge/Gallinaquieta/quiet.png" id="2_nb50r"]
 [ext_resource type="Texture2D" uid="uid://bed86bmakepwt" path="res://Resources/Personatge/Gallinavoladora/volador.png" id="4_5t84w"]
+[ext_resource type="Script" path="res://Scripts/Line2D.gd" id="5_wbhol"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m82l8"]
 atlas = ExtResource("2_jhftw")
@@ -318,8 +319,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ojg71"]
-radius = 17.0
-height = 60.0
+radius = 11.0
+height = 44.0
 
 [node name="Jugador" type="CharacterBody2D"]
 texture_filter = 1
@@ -327,12 +328,16 @@ script = ExtResource("1_404o0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
+scale = Vector2(0.585, 0.585)
 sprite_frames = SubResource("SpriteFrames_ncwe4")
 animation = &"normal"
 autoplay = "normal"
 frame_progress = 0.19608
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 14)
+position = Vector2(0, 8)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_ojg71")
+
+[node name="Line2D" type="Line2D" parent="."]
+script = ExtResource("5_wbhol")
