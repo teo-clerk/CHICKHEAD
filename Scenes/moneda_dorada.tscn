@@ -1,0 +1,80 @@
+[gd_scene load_steps=12 format=3 uid="uid://djpn4r1ikeehw"]
+
+[ext_resource type="Texture2D" uid="uid://k8batu6dlggl" path="res://Resources/monedes/moneda dorada/moneda dorada.png" id="1_42lxu"]
+[ext_resource type="Script" path="res://Scripts/moneda_dorada.gd" id="1_ucr6k"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fxf0a"]
+atlas = ExtResource("1_42lxu")
+region = Rect2(0, 0, 225, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvpdk"]
+atlas = ExtResource("1_42lxu")
+region = Rect2(225, 0, 225, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohh7l"]
+atlas = ExtResource("1_42lxu")
+region = Rect2(450, 0, 225, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mgy8n"]
+atlas = ExtResource("1_42lxu")
+region = Rect2(675, 0, 225, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xroth"]
+atlas = ExtResource("1_42lxu")
+region = Rect2(900, 0, 225, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yskg5"]
+atlas = ExtResource("1_42lxu")
+region = Rect2(1125, 0, 225, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1wko"]
+atlas = ExtResource("1_42lxu")
+region = Rect2(1350, 0, 225, 225)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_18ysx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fxf0a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvpdk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ohh7l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mgy8n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xroth")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yskg5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m1wko")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2j4fg"]
+radius = 15.0
+height = 56.0
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_ucr6k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_18ysx")
+autoplay = "default"
+frame_progress = 0.528611
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7, -15)
+rotation = 0.958186
+shape = SubResource("CapsuleShape2D_2j4fg")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
