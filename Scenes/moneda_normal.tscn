@@ -1,0 +1,77 @@
+[gd_scene load_steps=11 format=3 uid="uid://bvoxyc8e4k3y5"]
+
+[ext_resource type="Texture2D" uid="uid://bmbuvbf1p7ntv" path="res://Resources/monedes/moneda normal/moneda normal.png" id="1_cmq6r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j83pe"]
+atlas = ExtResource("1_cmq6r")
+region = Rect2(0, 0, 225, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i3517"]
+atlas = ExtResource("1_cmq6r")
+region = Rect2(225, 0, 225, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifej0"]
+atlas = ExtResource("1_cmq6r")
+region = Rect2(450, 0, 225, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4smw6"]
+atlas = ExtResource("1_cmq6r")
+region = Rect2(675, 0, 225, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ahbt"]
+atlas = ExtResource("1_cmq6r")
+region = Rect2(900, 0, 225, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dfh5g"]
+atlas = ExtResource("1_cmq6r")
+region = Rect2(1125, 0, 225, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wm3ms"]
+atlas = ExtResource("1_cmq6r")
+region = Rect2(1350, 0, 225, 225)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rbmfp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j83pe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i3517")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ifej0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4smw6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ahbt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dfh5g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wm3ms")
+}],
+"loop": true,
+"name": &"moneda",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2j4fg"]
+radius = 15.0
+height = 56.0
+
+[node name="Area2D" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rbmfp")
+animation = &"moneda"
+autoplay = "moneda"
+frame_progress = 0.537559
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7, -15)
+rotation = 0.958186
+shape = SubResource("CapsuleShape2D_2j4fg")
