@@ -64,10 +64,10 @@ animations = [{
 radius = 7.78392
 height = 35.3809
 
-[node name="Area2D" type="Area2D"]
+[node name="MonedaNormal" type="Area2D"]
 script = ExtResource("1_33bsn")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimacióMonedaNormal" type="AnimatedSprite2D" parent="."]
 position = Vector2(9.53674e-07, 9.53674e-07)
 scale = Vector2(0.403333, 0.403333)
 sprite_frames = SubResource("SpriteFrames_rbmfp")
@@ -75,7 +75,7 @@ animation = &"moneda"
 autoplay = "moneda"
 frame_progress = 0.350811
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="ColisióMonedaNormal" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
 rotation = 0.837758
 shape = SubResource("CapsuleShape2D_2j4fg")
