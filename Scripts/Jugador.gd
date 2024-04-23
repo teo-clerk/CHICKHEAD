@@ -8,6 +8,7 @@ var posi :Vector2
 var posf :Vector2
 var vpos :Vector2
 var posmax :int
+var dir :bool
 
 
 func _physics_process(delta):
@@ -43,6 +44,6 @@ func _physics_process(delta):
 	# As good practice, you should replace UI actions with custom gameplay actions.
 
 	
-	#var dir =  velocity.x < 0
+	#dir =  velocity.x < 0
 	#jugador.flip_h = dir
 	move_and_slide()
