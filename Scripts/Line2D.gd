@@ -17,6 +17,7 @@ func _process(delta):
 		posi = get_viewport().get_mouse_position()
 		clear_points()
 		add_point(Vector2(0, 0), -1)
+
 	if Input.is_action_pressed('Click') and get_parent().is_on_floor():
 		posf = get_viewport().get_mouse_position()
 		vpos = posf - posi
@@ -32,11 +33,13 @@ func _process(delta):
 		add_point(Vector2(0, 0), -1)
 		for i in range(1000):
 			if vx > 0:
-				add_point(Vector2(i, (vy * (i / vx)) + (0.5 * 980 * ((i/vx) ** 2))), -1)
-			else:
-				add_point(Vector2(-i, (vy * (-i / vx)) + (0.5 * 980 * ((-i/vx) ** 2))), -1)
-		
+				add_point(Vector2(i, vy * i / vx + 0.5 * 980 * (i/vx) ** 2), -1)
+			elif vx < 0:
+				add_point(Vector2(-i, vy * -i / vx + 0.5 * 980 * (-i/vx) ** 2), -1)
+			elif vy < 0:
+				clear_points()
+				add_point(Vector2(0, 0), -1)
+				add_point(Vector2(0, -(vy ** 2) / (2 * 980)), -1)
 		
 	else:
 		clear_points()
-	

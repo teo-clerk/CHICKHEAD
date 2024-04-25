@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-@onready var jugador = $"."
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = 980
