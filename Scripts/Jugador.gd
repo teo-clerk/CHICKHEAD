@@ -21,6 +21,16 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed('Click'):
 		posi = get_viewport().get_mouse_position()
 	# Add the gravity.
+	
+	if Input.is_action_pressed('espai') and is_on_floor() == false:
+		gravity = 300
+		$AnimatedSprite2D.play('planejant')
+	elif is_on_floor() == false:
+		gravity = 980
+		$AnimatedSprite2D.play('movense_volant')
+	else:
+		$AnimatedSprite2D.play('normal')
+	
 	if not is_on_floor():
 		#jugador.animation = "saltar"
 		velocity.y += gravity * delta
@@ -37,6 +47,7 @@ func _physics_process(delta):
 			vpos *= 4
 		velocity = vpos
 		print(vpos)
+	
 	if is_on_floor():
 		velocity.x = move_toward(velocity.x, 0, 40)
 
