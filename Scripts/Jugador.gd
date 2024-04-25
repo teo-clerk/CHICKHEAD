@@ -38,12 +38,15 @@ func _physics_process(delta):
 		velocity = vpos
 		print(vpos)
 	if is_on_floor():
-		velocity.x = move_toward(velocity.x, 0, 25)
+		velocity.x = move_toward(velocity.x, 0, 40)
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 
 	
-	#dir =  velocity.x < 0
-	#jugador.flip_h = dir
+	if velocity.x < 0:
+		$AnimatedSprite2D.flip_h = true
+	elif velocity.x > 0:
+		$AnimatedSprite2D.flip_h = false
+	
 	move_and_slide()
