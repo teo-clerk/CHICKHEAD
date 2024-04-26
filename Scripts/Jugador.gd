@@ -21,7 +21,7 @@ func _physics_process(delta):
 		posi = get_viewport().get_mouse_position()
 	# Add the gravity.
 	
-	if Input.is_action_pressed('espai') and is_on_floor() == false:
+	if Input.is_action_pressed('espai') and is_on_floor() == false and velocity.y >= 0:
 		gravity = 300
 		$AnimatedSprite2D.play('planejant')
 	elif is_on_floor() == false:

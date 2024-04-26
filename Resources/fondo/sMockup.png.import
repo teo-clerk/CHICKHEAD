@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfbsnux3naqaw"
-path="res://.godot/imported/Base Color.png-ff0e52fced9aa82f14f0dc3bc986b3e3.ctex"
+uid="uid://co6ujuh0b35ke"
+path="res://.godot/imported/sMockup.png-8669f1488a2d5d29998335a65e2eb0fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Tilemaps/Cyber_2/Background/Base Color.png"
-dest_files=["res://.godot/imported/Base Color.png-ff0e52fced9aa82f14f0dc3bc986b3e3.ctex"]
+source_file="res://Resources/fondo/sMockup.png"
+dest_files=["res://.godot/imported/sMockup.png-8669f1488a2d5d29998335a65e2eb0fb.ctex"]
 
 [params]
 
