@@ -31,15 +31,23 @@ func _process(delta):
 		var vy = vpos[1]
 		clear_points()
 		add_point(Vector2(0, 0), -1)
-		for i in range(1000):
+		var lastpoint = -1
+		var y = 0
+		for x in range(1000):
 			if vx > 0:
-				add_point(Vector2(i, vy * i / vx + 0.5 * 980 * (i/vx) ** 2), -1)
+				y = vy * x / vx + 0.5 * 980 * (x/vx) ** 2
+				add_point(Vector2(x, y), -1)
 			elif vx < 0:
-				add_point(Vector2(-i, vy * -i / vx + 0.5 * 980 * (-i/vx) ** 2), -1)
+				y = vy * -x / vx + 0.5 * 980 * (-x/vx) ** 2
+				add_point(Vector2(-x, y), -1)
 			elif vy < 0:
 				clear_points()
 				add_point(Vector2(0, 0), -1)
 				add_point(Vector2(0, -(vy ** 2) / (2 * 980)), -1)
+			if y > 0:
+				break
+				
+			
 		
 	else:
 		clear_points()

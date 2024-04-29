@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://bwppkoqx0wytc"]
+[gd_scene load_steps=54 format=3 uid="uid://bwppkoqx0wytc"]
 
 [ext_resource type="Script" path="res://Scripts/Jugador.gd" id="1_404o0"]
 [ext_resource type="Texture2D" uid="uid://bqp36atvjhh18" path="res://Resources/Personatge/Gallinadisparada/disparat.png" id="2_jhftw"]
@@ -322,6 +322,9 @@ animations = [{
 radius = 11.0
 height = 38.0
 
+[sub_resource type="Gradient" id="Gradient_n4pps"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
 [sub_resource type="Curve" id="Curve_cu8wk"]
 max_value = 51.19
 bake_resolution = 50
@@ -366,6 +369,7 @@ shape = SubResource("CapsuleShape2D_ojg71")
 
 [node name="LineaPredictora" type="Line2D" parent="."]
 position = Vector2(0, 20)
+gradient = SubResource("Gradient_n4pps")
 script = ExtResource("5_wbhol")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
