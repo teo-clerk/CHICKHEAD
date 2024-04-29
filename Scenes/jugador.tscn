@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://bwppkoqx0wytc"]
+[gd_scene load_steps=55 format=3 uid="uid://bwppkoqx0wytc"]
 
 [ext_resource type="Script" path="res://Scripts/Jugador.gd" id="1_404o0"]
 [ext_resource type="Texture2D" uid="uid://bqp36atvjhh18" path="res://Resources/Personatge/Gallinadisparada/disparat.png" id="2_jhftw"]
@@ -383,6 +383,7 @@ collision_base_size = 35.91
 visibility_rect = Rect2(-100, -100, 500, 500)
 trail_lifetime = 4.83
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="salto" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(11, -3)
 stream = ExtResource("6_1sy5j")
+volume_db = -11.243
