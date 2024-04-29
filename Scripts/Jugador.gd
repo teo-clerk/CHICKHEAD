@@ -1,4 +1,6 @@
 extends CharacterBody2D
+@onready var salto = $salto
+
 
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -46,10 +48,10 @@ func _physics_process(delta):
 		else:
 			vpos *= 4
 		velocity = vpos
-		print(vpos)
 	
 	if is_on_floor():
 		velocity.x = move_toward(velocity.x, 0, 40)
+		salto.play()
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
