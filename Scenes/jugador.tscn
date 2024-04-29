@@ -373,9 +373,8 @@ gradient = SubResource("Gradient_n4pps")
 script = ExtResource("5_wbhol")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
-visible = false
 modulate = Color(0.611765, 0, 0, 1)
-position = Vector2(10, 4)
+position = Vector2(11, -3)
 amount = 130
 process_material = SubResource("ParticleProcessMaterial_qx7wi")
 lifetime = 3.0
