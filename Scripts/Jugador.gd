@@ -36,6 +36,7 @@ func _physics_process(delta):
 
 	# Handle jump.
 	if Input.is_action_just_released('Click') and is_on_floor():
+		
 		posf = get_viewport().get_mouse_position()
 		vpos = posf - posi
 		posmax = max(abs(vpos[0]), abs(vpos[1]))
