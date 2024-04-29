@@ -46,7 +46,6 @@ func _physics_process(delta):
 		else:
 			vpos *= 4
 		velocity = vpos
-		print(vpos)
 	
 	if is_on_floor():
 		velocity.x = move_toward(velocity.x, 0, 40)
