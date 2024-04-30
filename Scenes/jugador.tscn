@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://d0h23texhratm" path="res://Resources/Personatge/Gallinaquieta/quiet.png" id="2_nb50r"]
 [ext_resource type="Texture2D" uid="uid://bed86bmakepwt" path="res://Resources/Personatge/Gallinavoladora/volador.png" id="4_5t84w"]
 [ext_resource type="Script" path="res://Scripts/Line2D.gd" id="5_wbhol"]
-[ext_resource type="AudioStream" uid="uid://bqfmqngx5ymsd" path="res://Resources/Musica/squeaky-toy-1-6059.mp3" id="6_1sy5j"]
+[ext_resource type="AudioStream" uid="uid://jqt1wq0egysm" path="res://Resources/Musica/movement-swipe-whoosh-3-186577.mp3" id="6_ecju8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m82l8"]
 atlas = ExtResource("2_jhftw")
@@ -385,5 +385,5 @@ trail_lifetime = 4.83
 
 [node name="salto" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(11, -3)
-stream = ExtResource("6_1sy5j")
-volume_db = -11.243
+stream = ExtResource("6_ecju8")
+volume_db = 6.56
