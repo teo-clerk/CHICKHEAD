@@ -10,7 +10,7 @@ var posf :Vector2
 var vpos :Vector2
 var posmax :int
 var dir :bool
-
+var mort
 
 func _physics_process(delta):
 	"""
@@ -19,6 +19,10 @@ func _physics_process(delta):
 	else:
 		jugador.animation = "default"
 	"""
+	mort = Global.dead
+	if mort == true:
+		print('mort')
+	
 	if Input.is_action_just_pressed('Click'):
 		posi = get_viewport().get_mouse_position()
 	# Add the gravity.
@@ -63,3 +67,4 @@ func _physics_process(delta):
 		$AnimatedSprite2D.flip_h = false
 	
 	move_and_slide()
+	

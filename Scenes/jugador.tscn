@@ -352,6 +352,8 @@ collision_bounce = 0.48
 
 [node name="Jugador" type="CharacterBody2D"]
 texture_filter = 1
+collision_layer = 2
+collision_mask = 9
 script = ExtResource("1_404o0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
