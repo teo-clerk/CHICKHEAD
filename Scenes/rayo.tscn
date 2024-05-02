@@ -1,0 +1,77 @@
+[gd_scene load_steps=10 format=3 uid="uid://c3gce40a68k5g"]
+
+[ext_resource type="Texture2D" uid="uid://fbt5gk64qdgy" path="res://Resources/Tilemaps/Cyber_1/animations.png" id="1_dext8"]
+[ext_resource type="Script" path="res://Scripts/rayo.gd" id="1_ksgck"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7h6gs"]
+atlas = ExtResource("1_dext8")
+region = Rect2(176, 79, 16, 51)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6g27"]
+atlas = ExtResource("1_dext8")
+region = Rect2(192, 79, 16, 51)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_526va"]
+atlas = ExtResource("1_dext8")
+region = Rect2(208, 79, 16, 51)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_neylp"]
+atlas = ExtResource("1_dext8")
+region = Rect2(224, 79, 16, 51)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bm4gu"]
+atlas = ExtResource("1_dext8")
+region = Rect2(240, 79, 16, 51)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y40lm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7h6gs")
+}],
+"loop": true,
+"name": &"normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7h6gs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6g27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_526va")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_neylp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bm4gu")
+}],
+"loop": true,
+"name": &"rayo",
+"speed": 11.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eewgt"]
+size = Vector2(4, 43)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_ksgck")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_y40lm")
+animation = &"rayo"
+frame = 3
+frame_progress = 0.383055
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_eewgt")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
