@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cthuvcfjfix53"]
+[gd_scene load_steps=18 format=3 uid="uid://cthuvcfjfix53"]
 
 [ext_resource type="Texture2D" uid="uid://bfbsnux3naqaw" path="res://Resources/Base Color.png" id="1_8amn2"]
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="2_yfwce"]
@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://bwppkoqx0wytc" path="res://Scenes/jugador.tscn" id="5_e8d2k"]
 [ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Fonts/8-bit-limit/8bitlimr.ttf" id="6_vi56d"]
 [ext_resource type="PackedScene" uid="uid://bvoxyc8e4k3y5" path="res://Scenes/moneda_normal.tscn" id="7_806bb"]
+[ext_resource type="Script" path="res://Scripts/Nivell1.gd" id="8_dji4u"]
+[ext_resource type="Script" path="res://Scripts/Nivell2.gd" id="9_4suh0"]
+[ext_resource type="Script" path="res://Scripts/Nivell3.gd" id="10_7f5kp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("2_yfwce")
@@ -1449,38 +1452,45 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 200
 
-[node name="Nivells" type="Button" parent="Butons/HBoxContainer"]
+[node name="Nivell1" type="Button" parent="Butons/HBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("6_vi56d")
 theme_override_font_sizes/font_size = 35
 text = "NIVELL 1"
+script = ExtResource("8_dji4u")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Butons/HBoxContainer/Nivells"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Butons/HBoxContainer/Nivell1"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Butons/HBoxContainer/Nivells/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Butons/HBoxContainer/Nivell1/StaticBody2D"]
 position = Vector2(63.75, 23)
 shape = SubResource("RectangleShape2D_6iotg")
 
-[node name="Tutorial" type="Button" parent="Butons/HBoxContainer"]
+[node name="Nivell2" type="Button" parent="Butons/HBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("6_vi56d")
 theme_override_font_sizes/font_size = 35
 text = "NIVELL 2"
+script = ExtResource("9_4suh0")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Butons/HBoxContainer/Tutorial"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Butons/HBoxContainer/Nivell2"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Butons/HBoxContainer/Tutorial/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Butons/HBoxContainer/Nivell2/StaticBody2D"]
 position = Vector2(67.5, 22.5)
 shape = SubResource("RectangleShape2D_yemc7")
 
-[node name="Nivells2" type="Button" parent="Butons/HBoxContainer"]
+[node name="Nivell3" type="Button" parent="Butons/HBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("6_vi56d")
 theme_override_font_sizes/font_size = 35
 text = "NIVELL 3"
+script = ExtResource("10_7f5kp")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Butons/HBoxContainer/Nivells2"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Butons/HBoxContainer/Nivell3"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Butons/HBoxContainer/Nivells2/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Butons/HBoxContainer/Nivell3/StaticBody2D"]
 position = Vector2(67.25, 23)
 shape = SubResource("RectangleShape2D_jkj7e")
+
+[connection signal="pressed" from="Butons/HBoxContainer/Nivell1" to="Butons/HBoxContainer/Nivell1" method="_on_pressed"]
+[connection signal="pressed" from="Butons/HBoxContainer/Nivell2" to="Butons/HBoxContainer/Nivell2" method="_on_pressed"]
+[connection signal="pressed" from="Butons/HBoxContainer/Nivell3" to="Butons/HBoxContainer/Nivell3" method="_on_pressed"]
