@@ -65,6 +65,8 @@ radius = 7.78392
 height = 35.3809
 
 [node name="MonedaNormal" type="Area2D"]
+collision_layer = 4
+collision_mask = 2
 script = ExtResource("1_33bsn")
 
 [node name="AnimacióMonedaNormal" type="AnimatedSprite2D" parent="."]

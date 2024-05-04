@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://ccjrpgi7gsych"]
+[gd_scene load_steps=18 format=3 uid="uid://ccjrpgi7gsych"]
 
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="1_cffki"]
 [ext_resource type="Script" path="res://Scripts/Global.gd" id="1_p7k3g"]
@@ -12,6 +12,7 @@
 [ext_resource type="AudioStream" uid="uid://dkkj4ia8ajbbq" path="res://Resources/Musica/581358__podcapocalipsis__another-melody-for-a-indie-videogame-or-something.wav" id="10_e0yxo"]
 [ext_resource type="AudioStream" uid="uid://bivx18si1gkax" path="res://Resources/Musica/epic-hybrid-logo-157092.mp3" id="11_bfevi"]
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="12_pjtb3"]
+[ext_resource type="PackedScene" uid="uid://c3gce40a68k5g" path="res://Scenes/rayo.tscn" id="13_0a7tm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("1_cffki")
@@ -1427,3 +1428,6 @@ autoplay = true
 
 [node name="Area2D3" parent="." instance=ExtResource("12_pjtb3")]
 position = Vector2(363, 463)
+
+[node name="Area2D4" parent="." instance=ExtResource("13_0a7tm")]
+position = Vector2(830, 414)
