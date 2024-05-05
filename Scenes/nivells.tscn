@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cthuvcfjfix53"]
+[gd_scene load_steps=20 format=3 uid="uid://cthuvcfjfix53"]
 
 [ext_resource type="Texture2D" uid="uid://bfbsnux3naqaw" path="res://Resources/Base Color.png" id="1_8amn2"]
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="2_yfwce"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://Scripts/Nivell1.gd" id="8_dji4u"]
 [ext_resource type="Script" path="res://Scripts/Nivell2.gd" id="9_4suh0"]
 [ext_resource type="Script" path="res://Scripts/Nivell3.gd" id="10_7f5kp"]
+[ext_resource type="Script" path="res://Scripts/TornarAlMenú.gd" id="11_mwhfi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("2_yfwce")
@@ -1397,6 +1398,9 @@ size = Vector2(135, 45)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkj7e"]
 size = Vector2(134.5, 46)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_30fc7"]
+size = Vector2(136, 47)
+
 [node name="Nivells" type="Node"]
 
 [node name="BaseColor" type="Sprite2D" parent="."]
@@ -1491,6 +1495,31 @@ script = ExtResource("10_7f5kp")
 position = Vector2(67.25, 23)
 shape = SubResource("RectangleShape2D_jkj7e")
 
+[node name="TornarAlMenú" type="Button" parent="Butons"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -72.0
+offset_top = -163.0
+offset_right = 64.0
+offset_bottom = -117.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("6_vi56d")
+theme_override_font_sizes/font_size = 35
+text = "TORNAR"
+script = ExtResource("11_mwhfi")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Butons/TornarAlMenú"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Butons/TornarAlMenú/StaticBody2D"]
+position = Vector2(68, 22.5)
+shape = SubResource("RectangleShape2D_30fc7")
+
 [connection signal="pressed" from="Butons/HBoxContainer/Nivell1" to="Butons/HBoxContainer/Nivell1" method="_on_pressed"]
 [connection signal="pressed" from="Butons/HBoxContainer/Nivell2" to="Butons/HBoxContainer/Nivell2" method="_on_pressed"]
 [connection signal="pressed" from="Butons/HBoxContainer/Nivell3" to="Butons/HBoxContainer/Nivell3" method="_on_pressed"]
+[connection signal="pressed" from="Butons/TornarAlMenú" to="Butons/TornarAlMenú" method="_on_pressed"]
