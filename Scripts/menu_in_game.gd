@@ -24,4 +24,5 @@ func _on_sortir_pressed():
 
 func _on_menú_pressed():
 	get_tree().paused = false
+	Global.monedes = 0
 	get_tree().change_scene_to_file("res://Scenes/interfaz.tscn") # Replace with function body.

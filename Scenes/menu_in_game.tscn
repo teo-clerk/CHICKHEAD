@@ -16,7 +16,7 @@ script = ExtResource("1_njg3v")
 layout_mode = 0
 offset_right = 960.0
 offset_bottom = 536.0
-color = Color(0, 0, 0, 0.172549)
+color = Color(0, 0, 0, 0.564706)
 
 [node name="BoxContainer" type="BoxContainer" parent="."]
 layout_mode = 1
