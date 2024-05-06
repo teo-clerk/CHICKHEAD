@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://cthuvcfjfix53"]
+[gd_scene load_steps=21 format=3 uid="uid://cthuvcfjfix53"]
 
 [ext_resource type="Texture2D" uid="uid://bfbsnux3naqaw" path="res://Resources/Base Color.png" id="1_8amn2"]
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="2_yfwce"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://Scripts/Nivell1.gd" id="8_dji4u"]
 [ext_resource type="Script" path="res://Scripts/Nivell2.gd" id="9_4suh0"]
 [ext_resource type="Script" path="res://Scripts/Nivell3.gd" id="10_7f5kp"]
+[ext_resource type="PackedScene" uid="uid://pwuok1fnhkix" path="res://Scenes/mapa_1.tscn" id="10_bnwcw"]
 [ext_resource type="Script" path="res://Scripts/TornarAlMenú.gd" id="11_mwhfi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
@@ -1475,6 +1476,7 @@ theme_override_fonts/font = ExtResource("6_vi56d")
 theme_override_font_sizes/font_size = 35
 text = "NIVELL 2"
 script = ExtResource("9_4suh0")
+escena = ExtResource("10_bnwcw")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Butons/HBoxContainer/Nivell2"]
 
