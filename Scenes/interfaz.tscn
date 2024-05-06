@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dckl2ky5y7pv0"]
+[gd_scene load_steps=20 format=3 uid="uid://dckl2ky5y7pv0"]
 
 [ext_resource type="Texture2D" uid="uid://bfbsnux3naqaw" path="res://Resources/Base Color.png" id="1_fl36l"]
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="2_xiabf"]
@@ -11,6 +11,7 @@
 [ext_resource type="Script" path="res://Scripts/Tutorial.gd" id="9_nix3k"]
 [ext_resource type="PackedScene" uid="uid://cthuvcfjfix53" path="res://Scenes/nivells.tscn" id="9_s0qvl"]
 [ext_resource type="Script" path="res://Scripts/Sortir.gd" id="10_dyymi"]
+[ext_resource type="PackedScene" uid="uid://ccjrpgi7gsych" path="res://Scenes/mapa_prueba.tscn" id="11_5m6p6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("2_xiabf")
@@ -1473,6 +1474,7 @@ theme_override_fonts/font = ExtResource("6_hlpc5")
 theme_override_font_sizes/font_size = 35
 text = "TUTORIAL"
 script = ExtResource("9_nix3k")
+escena = ExtResource("11_5m6p6")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Butons/HBoxContainer/Tutorial"]
 
