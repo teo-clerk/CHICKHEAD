@@ -11,6 +11,7 @@ var vpos :Vector2
 var posmax :int
 var dir :bool
 var mort
+var preparant_moviment := false
 
 func _physics_process(delta):
 	"""
@@ -24,6 +25,7 @@ func _physics_process(delta):
 		print('mort')
 	
 	if Input.is_action_just_pressed('Click'):
+		preparant_moviment = true
 		posi = get_viewport().get_mouse_position()
 	# Add the gravity.
 	
@@ -42,16 +44,17 @@ func _physics_process(delta):
 
 	# Handle jump.
 	if Input.is_action_just_released('Click') and is_on_floor():
-		
-		posf = get_viewport().get_mouse_position()
-		vpos = posf - posi
-		posmax = max(abs(vpos[0]), abs(vpos[1]))
-		if posmax > 125:
-			vpos[1] = vpos[1] * 500 / posmax
-			vpos[0] = vpos[0] * 500 / posmax
-		else:
-			vpos *= 4
-		velocity = vpos
+		if preparant_moviment:
+			posf = get_viewport().get_mouse_position()
+			vpos = posf - posi
+			posmax = max(abs(vpos[0]), abs(vpos[1]))
+			if posmax > 125:
+				vpos[1] = (vpos[1] * 500 / posmax) * scale[0]
+				vpos[0] = (vpos[0] * 500 / posmax) * scale[0]
+			else:
+				vpos *= 4 * scale[0]
+			velocity = vpos
+			preparant_moviment = false
 	
 	if is_on_floor():
 		velocity.x = move_toward(velocity.x, 0, 40)
@@ -59,8 +62,8 @@ func _physics_process(delta):
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-
-	
+	if velocity != Vector2(0, 0):
+		pass
 	if velocity.x < 0:
 		$AnimatedSprite2D.flip_h = true
 	elif velocity.x > 0:
