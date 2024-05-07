@@ -48,11 +48,12 @@ func _physics_process(delta):
 			posf = get_viewport().get_mouse_position()
 			vpos = posf - posi
 			posmax = max(abs(vpos[0]), abs(vpos[1]))
+			print(scale)
 			if posmax > 125:
-				vpos[1] = (vpos[1] * 500 / posmax) * scale[0]
-				vpos[0] = (vpos[0] * 500 / posmax) * scale[0]
+				vpos[1] = (vpos[1] * 500 / posmax)
+				vpos[0] = (vpos[0] * 500 / posmax)
 			else:
-				vpos *= 4 * scale[0]
+				vpos *= 4
 			velocity = vpos
 			preparant_moviment = false
 	
