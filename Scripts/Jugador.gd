@@ -12,6 +12,7 @@ var posmax :int
 var dir :bool
 var mort
 var preparant_moviment := false
+var pi := 3.141592
 
 func _physics_process(delta):
 	"""
@@ -48,11 +49,12 @@ func _physics_process(delta):
 			posf = get_viewport().get_mouse_position()
 			vpos = posf - posi
 			posmax = max(abs(vpos[0]), abs(vpos[1]))
+			print(scale)
 			if posmax > 125:
-				vpos[1] = (vpos[1] * 500 / posmax) * scale[0]
-				vpos[0] = (vpos[0] * 500 / posmax) * scale[0]
+				vpos[1] = (vpos[1] * 500 / posmax)
+				vpos[0] = (vpos[0] * 500 / posmax)
 			else:
-				vpos *= 4 * scale[0]
+				vpos *= 4
 			velocity = vpos
 			preparant_moviment = false
 	
@@ -62,8 +64,12 @@ func _physics_process(delta):
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	if velocity != Vector2(0, 0):
-		pass
+	if velocity.x == 0:
+		rotation = 0
+	elif velocity != Vector2(0, 0) and !is_on_floor():
+		rotation_degrees = atan(velocity.y / velocity.x) * 180 / pi
+	else:
+		rotation = 0
 	if velocity.x < 0:
 		$AnimatedSprite2D.flip_h = true
 	elif velocity.x > 0:
