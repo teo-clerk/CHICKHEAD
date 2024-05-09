@@ -16,7 +16,6 @@ func _on_tornar_a_intentar_pressed():
 
 
 func _on_menu_pressed():
-	Global.monedes = 0
 	get_tree().change_scene_to_file("res://Scenes/interfaz.tscn") # Replace with function body.
 
 

@@ -23,6 +23,7 @@ func _physics_process(delta):
 	"""
 	mort = Global.dead
 	if mort == true:
+		Global.dead = false
 		Global.monedes = 0
 		get_tree().change_scene_to_file("res://Scenes/Derrota.tscn")
 	
