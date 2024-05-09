@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://ccjrpgi7gsych"]
+[gd_scene load_steps=19 format=3 uid="uid://ccjrpgi7gsych"]
 
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="1_cffki"]
 [ext_resource type="Script" path="res://Scripts/Global.gd" id="1_p7k3g"]
@@ -13,6 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://bivx18si1gkax" path="res://Resources/Musica/epic-hybrid-logo-157092.mp3" id="11_bfevi"]
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="12_pjtb3"]
 [ext_resource type="PackedScene" uid="uid://c3gce40a68k5g" path="res://Scenes/rayo.tscn" id="13_0a7tm"]
+[ext_resource type="Script" path="res://Scenes/Ultima_escenaMapaPrueba.gd" id="14_lgqn6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("1_cffki")
@@ -1431,3 +1432,10 @@ position = Vector2(363, 463)
 
 [node name="Area2D4" parent="." instance=ExtResource("13_0a7tm")]
 position = Vector2(830, 414)
+
+[node name="Ultima_escenaMapaPrueba" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("14_lgqn6")

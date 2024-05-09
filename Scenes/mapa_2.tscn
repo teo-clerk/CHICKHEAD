@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cyxleru3ieghy" path="res://Scenes/contador.tscn" id="11_hoqts"]
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="12_jcubh"]
 [ext_resource type="PackedScene" uid="uid://c3gce40a68k5g" path="res://Scenes/rayo.tscn" id="13_3j2e4"]
-[ext_resource type="Script" path="res://Scenes/Ultima_escenaMapa2.gd" id="14_041bh"]
+[ext_resource type="Script" path="res://Scripts/Ultima_escenaMapa2.gd" id="14_1nos6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("7_1uu81")
@@ -1631,4 +1631,4 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("14_041bh")
+script = ExtResource("14_1nos6")

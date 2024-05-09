@@ -21,7 +21,11 @@ func _physics_process(delta):
 	else:
 		jugador.animation = "default"
 	"""
+	if position.y > 1000:
+		Global.dead = true 
+	
 	mort = Global.dead
+	
 	if mort == true:
 		Global.dead = false
 		Global.monedes = 0
