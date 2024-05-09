@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ca6ton52sif71"]
+
+[ext_resource type="PackedScene" uid="uid://j4sxthbrdeqh" path="res://Scenes/menu_in_game.tscn" id="1_luwcf"]
+[ext_resource type="PackedScene" uid="uid://cyxleru3ieghy" path="res://Scenes/contador.tscn" id="2_0j8fp"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="MenuInGame" parent="." instance=ExtResource("1_luwcf")]
+
+[node name="Contador" parent="." instance=ExtResource("2_0j8fp")]
+position = Vector2(136, 80)
