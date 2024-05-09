@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://bdtlfebfm187c"]
+[gd_scene load_steps=10 format=3 uid="uid://bdtlfebfm187c"]
 
 [ext_resource type="Texture2D" uid="uid://bc13s4yoym5vd" path="res://clau.png" id="1_0wwjh"]
+[ext_resource type="Script" path="res://clau.gd" id="1_r2410"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_81dix"]
 atlas = ExtResource("1_0wwjh")
@@ -51,6 +52,7 @@ height = 106.0
 
 [node name="Area2D7" type="Area2D"]
 scale = Vector2(0.5, 0.5)
+script = ExtResource("1_r2410")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_x7hyc")
