@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c44c75yf0hn44"]
 
 [ext_resource type="Texture2D" uid="uid://bfbsnux3naqaw" path="res://Resources/Base Color.png" id="1_ey2xt"]
-[ext_resource type="Script" path="res://Scenes/Derrota.gd" id="1_pretx"]
+[ext_resource type="Script" path="res://Scripts/Derrota.gd" id="1_pretx"]
 [ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Fonts/8-bit-limit/8bitlimr.ttf" id="2_hhl8a"]
 
 [node name="PantallaDerrota" type="Node2D"]
