@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://c44c75yf0hn44"]
+
+[ext_resource type="Texture2D" uid="uid://bfbsnux3naqaw" path="res://Resources/Base Color.png" id="1_ey2xt"]
+[ext_resource type="Script" path="res://Scenes/Derrota.gd" id="1_pretx"]
+[ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Fonts/8-bit-limit/8bitlimr.ttf" id="2_hhl8a"]
+
+[node name="PantallaDerrota" type="Node2D"]
+script = ExtResource("1_pretx")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+position = Vector2(480, 272)
+scale = Vector2(2, 1.7)
+color = Color(1, 0, 0, 1)
+
+[node name="BaseColor" type="Sprite2D" parent="."]
+position = Vector2(480, 272)
+scale = Vector2(2, 1.7)
+texture = ExtResource("1_ey2xt")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(0, 50)
+offset_top = 96.0
+offset_right = 960.0
+offset_bottom = 224.0
+theme_override_fonts/normal_font = ExtResource("2_hhl8a")
+theme_override_font_sizes/normal_font_size = 90
+bbcode_enabled = true
+text = "[center]DERROTA[/center]"
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 400.0
+offset_top = 136.0
+offset_right = 559.0
+offset_bottom = 512.0
+grow_vertical = 2
+size_flags_horizontal = 4
+alignment = 1
+vertical = true
+
+[node name="TornarAIntentar" type="Button" parent="BoxContainer"]
+layout_mode = 2
+text = "Torna a intentar-ho"
+
+[node name="Menu" type="Button" parent="BoxContainer"]
+layout_mode = 2
+text = "Menú"
+
+[node name="Sortir" type="Button" parent="BoxContainer"]
+layout_mode = 2
+text = "Sortir"
+
+[connection signal="pressed" from="BoxContainer/TornarAIntentar" to="." method="_on_tornar_a_intentar_pressed"]
+[connection signal="pressed" from="BoxContainer/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="BoxContainer/Sortir" to="." method="_on_sortir_pressed"]
