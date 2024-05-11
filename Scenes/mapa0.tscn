@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://di6pk5fs4p4ci"]
+[gd_scene load_steps=19 format=3 uid="uid://di6pk5fs4p4ci"]
 
 [ext_resource type="Script" path="res://Scripts/nivell 2.gd" id="1_gsnnf"]
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="2_mpc1l"]
@@ -9,6 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="7_wugbm"]
 [ext_resource type="PackedScene" uid="uid://bdtlfebfm187c" path="res://Scenes/clau.tscn" id="8_f32hv"]
 [ext_resource type="Texture2D" uid="uid://bdr1xkfj5o3fo" path="res://pixil-frame-0(13).png" id="9_dbjus"]
+[ext_resource type="PackedScene" uid="uid://bwppkoqx0wytc" path="res://Scenes/jugador.tscn" id="10_ml6ct"]
+[ext_resource type="Script" path="res://Scripts/Ultima_escenaMapa0.gd" id="11_l4fdn"]
+[ext_resource type="Script" path="res://Scripts/Global.gd" id="12_lx5eb"]
+[ext_resource type="PackedScene" uid="uid://ca6ton52sif71" path="res://Scenes/canvas_layer.tscn" id="12_sdv1r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y1eec"]
 texture = ExtResource("2_mpc1l")
@@ -1634,6 +1638,27 @@ position = Vector2(5336, 297)
 texture = ExtResource("9_dbjus")
 region_enabled = true
 region_rect = Rect2(22, 0, 142, 152)
+
+[node name="Jugador" parent="." instance=ExtResource("10_ml6ct")]
+position = Vector2(63, 465)
+
+[node name="Camera2D" type="Camera2D" parent="Jugador"]
+position = Vector2(15, -235)
+limit_left = -48
+limit_top = 0
+limit_bottom = 0
+
+[node name="Ultima_escenaMapa0" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("11_l4fdn")
+
+[node name="CanvasLayer" parent="." instance=ExtResource("12_sdv1r")]
+
+[node name="Global" type="Node" parent="."]
+script = ExtResource("12_lx5eb")
 
 [connection signal="body_entered" from="porta final" to="." method="_on_porta_final_body_entered"]
 
