@@ -8,12 +8,15 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	print(Global.claus_necessaries," ", Global.claus)
+	pass
+	
+	 # Replace with function body.
 
 
-func _on_area_2d_body_entered(body):
-	var claus_necessaries := Global.claus_necessaries
-	var claus := Global.claus
+func _on_body_entered(body):
+	var claus_necessaries :int = Global.claus_necessaries
+	var claus :int = Global.claus
+	print("dentro")
 	if claus_necessaries == claus:
 		Global.claus = 0
 		print("Victoria")

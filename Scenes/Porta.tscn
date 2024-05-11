@@ -1,25 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://c5va652d2thfg"]
+[gd_scene load_steps=4 format=3 uid="uid://cy7lwd5n486pq"]
 
-[ext_resource type="Script" path="res://Scripts/Porta.gd" id="1_sfsxg"]
-[ext_resource type="Texture2D" uid="uid://b88objgodc013" path="res://Resources/Tilemaps/Cyber_1/door-futuristic-metal-gate-74126.png" id="1_vhlst"]
-[ext_resource type="PackedScene" uid="uid://bapdolxf7kn6q" path="res://Scenes/victoria.tscn" id="2_smljn"]
+[ext_resource type="Script" path="res://Scripts/Porta.gd" id="1_hd80i"]
+[ext_resource type="Texture2D" uid="uid://b88objgodc013" path="res://Resources/Tilemaps/Cyber_1/door-futuristic-metal-gate-74126.png" id="2_62lol"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pq7ae"]
-size = Vector2(35, 59)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ca18j"]
+size = Vector2(93, 146)
 
-[node name="Porta" type="Node2D"]
-script = ExtResource("1_sfsxg")
-escena = ExtResource("2_smljn")
+[node name="Porta" type="Area2D"]
+script = ExtResource("1_hd80i")
 
 [node name="Door-futuristic-metal-gate-74126" type="Sprite2D" parent="."]
-position = Vector2(0, -37)
-scale = Vector2(0.438235, 0.438235)
-texture = ExtResource("1_vhlst")
+position = Vector2(0, -80)
+texture = ExtResource("2_62lol")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -72)
+shape = SubResource("RectangleShape2D_ca18j")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, -30.5)
-shape = SubResource("RectangleShape2D_pq7ae")
-
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
