@@ -15,3 +15,6 @@ func _on_porta_final_body_entered(body):
 	if Global.claus == 3:
 		Global.claus = 0
 		print('victoria')
+	else:
+		$Sprite2D.visible = true
+		

@@ -1,6 +1,5 @@
 [gd_scene load_steps=15 format=3 uid="uid://di6pk5fs4p4ci"]
 
-[ext_resource type="Script" path="res://Scripts/rayo.gd" id="1_5si83"]
 [ext_resource type="Script" path="res://Scripts/nivell 2.gd" id="1_n82j0"]
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="1_udl0b"]
 [ext_resource type="Texture2D" uid="uid://b0yvvr2xjlodn" path="res://Resources/Tilemaps/Cyber_2/Assets/Props-01.png" id="2_03irf"]
@@ -9,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c3gce40a68k5g" path="res://Scenes/rayo.tscn" id="4_awjjc"]
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="6_6ykcu"]
 [ext_resource type="PackedScene" uid="uid://bdtlfebfm187c" path="res://clau.tscn" id="7_1xbyb"]
+[ext_resource type="Texture2D" uid="uid://bdr1xkfj5o3fo" path="res://pixil-frame-0(13).png" id="9_axiuo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y1eec"]
 texture = ExtResource("1_udl0b")
@@ -1586,7 +1586,7 @@ scale = Vector2(2, 2)
 [node name="TileMap" parent="Node2D" index="1"]
 layer_0/tile_data = PackedInt32Array()
 
-[node name="Camera2D" parent="Node2D/Jugador" index="5"]
+[node name="Camera2D" parent="Node2D/Jugador" index="6"]
 limit_left = 0
 
 [node name="Area2D2" parent="." instance=ExtResource("6_6ykcu")]
@@ -1615,7 +1615,6 @@ scale = Vector2(2.5, 2.5)
 [node name="Area2D7" parent="." instance=ExtResource("7_1xbyb")]
 position = Vector2(2940, 327)
 scale = Vector2(0.4, 0.4)
-script = ExtResource("1_5si83")
 
 [node name="Area2D8" parent="." instance=ExtResource("6_6ykcu")]
 position = Vector2(4074, 603)
@@ -1628,10 +1627,19 @@ position = Vector2(4134, 98)
 position = Vector2(596, 251)
 
 [node name="porta final" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="porta final"]
 position = Vector2(5494.63, 421.5)
 shape = SubResource("RectangleShape2D_n18ui")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(5336, 297)
+texture = ExtResource("9_axiuo")
+region_enabled = true
+region_rect = Rect2(22, 0, 142, 152)
 
 [connection signal="body_entered" from="porta final" to="." method="_on_porta_final_body_entered"]
 
