@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://ca6ton52sif71" path="res://Scenes/canvas_layer.tscn" id="12_05xru"]
 [ext_resource type="PackedScene" uid="uid://bdtlfebfm187c" path="res://Scenes/clau.tscn" id="12_r5sxj"]
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="13_4lg6r"]
-[ext_resource type="Script" path="res://Scripts/ConfiguracióTutorial.gd" id="14_lgqn6"]
+[ext_resource type="Script" path="res://Scripts/ConfiguracioTutorial.gd" id="14_lgqn6"]
 [ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/porta.tscn" id="15_y2qpd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
@@ -1492,13 +1492,7 @@ position = Vector2(664, 344)
 [node name="Area2D8" parent="Claus" instance=ExtResource("12_r5sxj")]
 position = Vector2(1624, 328)
 
-[node name="ConfiguracióNivell" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 128.0
-offset_top = 304.0
-offset_right = 168.0
-offset_bottom = 344.0
+[node name="ConfiguracioNivell" type="Node" parent="."]
 script = ExtResource("14_lgqn6")
 
 [node name="Jugador" parent="." instance=ExtResource("6_uej7m")]
