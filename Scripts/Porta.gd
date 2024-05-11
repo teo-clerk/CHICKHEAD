@@ -1,6 +1,6 @@
-extends Node2D
+extends Area2D
 
-@export var escena :PackedScene
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -9,8 +9,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-	
-	 # Replace with function body.
 
 
 func _on_body_entered(body):
@@ -20,4 +18,4 @@ func _on_body_entered(body):
 	if claus_necessaries == claus:
 		Global.claus = 0
 		print("Victoria")
-		get_tree().change_scene_to_packed(escena)  # Replace with function body.
+		get_tree().change_scene_to_file("res://Scenes/victoria.tscn")  # Replace with function body.

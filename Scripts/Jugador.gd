@@ -12,7 +12,6 @@ var posmax :int
 var dir :bool
 var mort
 var preparant_moviment := false
-var pi := 3.141592
 
 func _physics_process(delta):
 	"""
@@ -29,6 +28,7 @@ func _physics_process(delta):
 	if mort == true:
 		Global.dead = false
 		Global.monedes = 0
+		Global.claus = 0
 		get_tree().change_scene_to_file("res://Scenes/Derrota.tscn")
 	
 	if Input.is_action_just_pressed('Click'):
@@ -55,7 +55,6 @@ func _physics_process(delta):
 			posf = get_viewport().get_mouse_position()
 			vpos = posf - posi
 			posmax = max(abs(vpos[0]), abs(vpos[1]))
-			print(scale)
 			if posmax > 125:
 				vpos[1] = (vpos[1] * 500 / posmax)
 				vpos[0] = (vpos[0] * 500 / posmax)

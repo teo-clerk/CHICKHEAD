@@ -9,9 +9,9 @@
 [ext_resource type="AudioStream" uid="uid://dkkj4ia8ajbbq" path="res://Resources/Musica/581358__podcapocalipsis__another-melody-for-a-indie-videogame-or-something.wav" id="10_y2ug1"]
 [ext_resource type="Texture2D" uid="uid://bplmse2w7pxyh" path="res://Resources/bacground/cyberpunk-street-files/Version 1/PNG/layers/back-buildings.png" id="11_o1bug"]
 [ext_resource type="AudioStream" uid="uid://bivx18si1gkax" path="res://Resources/Musica/epic-hybrid-logo-157092.mp3" id="11_wce08"]
-[ext_resource type="Script" path="res://Scripts/Ultima_escenaMapa1.gd" id="12_pb8rt"]
 [ext_resource type="Texture2D" uid="uid://7onhoxrjm1j2" path="res://Resources/bacground/cyberpunk-street-files/Version 1/PNG/layers/foreground.png" id="12_u80df"]
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="13_3tvte"]
+[ext_resource type="Script" path="res://Scripts/ConfiguracióTutorial.gd" id="13_i3h05"]
 [ext_resource type="PackedScene" uid="uid://ca6ton52sif71" path="res://Scenes/canvas_layer.tscn" id="13_oewjk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
@@ -1458,6 +1458,9 @@ sources/2 = SubResource("TileSetAtlasSource_m8n7f")
 [node name="MapaPrueba" type="Node2D"]
 script = ExtResource("1_v0pdr")
 
+[node name="ConfiguracióTutorial" type="Node" parent="."]
+script = ExtResource("13_i3h05")
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_y2ug1")
 volume_db = -14.563
@@ -1526,13 +1529,6 @@ limit_left = -465
 limit_top = 0
 limit_right = 960
 limit_bottom = 0
-
-[node name="Ultima_escenaMapa1" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("12_pb8rt")
 
 [node name="Laser" type="Node2D" parent="."]
 

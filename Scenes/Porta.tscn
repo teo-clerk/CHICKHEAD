@@ -1,13 +1,15 @@
 [gd_scene load_steps=4 format=3 uid="uid://cy7lwd5n486pq"]
 
-[ext_resource type="Script" path="res://Scripts/Porta.gd" id="1_hd80i"]
+[ext_resource type="Script" path="res://Scripts/porta.gd" id="1_licse"]
 [ext_resource type="Texture2D" uid="uid://b88objgodc013" path="res://Resources/Tilemaps/Cyber_1/door-futuristic-metal-gate-74126.png" id="2_62lol"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ca18j"]
 size = Vector2(93, 146)
 
 [node name="Porta" type="Area2D"]
-script = ExtResource("1_hd80i")
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_licse")
 
 [node name="Door-futuristic-metal-gate-74126" type="Sprite2D" parent="."]
 position = Vector2(0, -80)
