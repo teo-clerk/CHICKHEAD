@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bapdolxf7kn6q"]
 
-[ext_resource type="Script" path="res://victoria.gd" id="1_kqkuu"]
+[ext_resource type="Script" path="res://Scripts/victoria.gd" id="1_kqkuu"]
 [ext_resource type="Texture2D" uid="uid://bfbsnux3naqaw" path="res://Resources/Base Color.png" id="1_s61r2"]
 [ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Fonts/8-bit-limit/8bitlimr.ttf" id="2_grkmi"]
 [ext_resource type="Texture2D" uid="uid://c2e3k4k4istde" path="res://Fonts/8-bit-limit/Accent.png" id="3_4ixcr"]
