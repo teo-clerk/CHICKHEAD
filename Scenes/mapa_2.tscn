@@ -10,9 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="8_3mltr"]
 [ext_resource type="Texture2D" uid="uid://b0yvvr2xjlodn" path="res://Resources/Tilemaps/Cyber_2/Assets/Props-01.png" id="9_oqn0o"]
 [ext_resource type="PackedScene" uid="uid://bwppkoqx0wytc" path="res://Scenes/jugador.tscn" id="10_bliy7"]
-[ext_resource type="PackedScene" uid="uid://cyxleru3ieghy" path="res://Scenes/contador.tscn" id="11_hoqts"]
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="12_jcubh"]
 [ext_resource type="PackedScene" uid="uid://c3gce40a68k5g" path="res://Scenes/rayo.tscn" id="13_3j2e4"]
+[ext_resource type="PackedScene" uid="uid://ca6ton52sif71" path="res://Scenes/canvas_layer.tscn" id="13_gydgu"]
 [ext_resource type="Script" path="res://Scripts/Ultima_escenaMapa2.gd" id="14_1nos6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
@@ -1523,11 +1523,9 @@ position = Vector2(-1336, 32)
 
 [node name="Camera2D" type="Camera2D" parent="Jugador"]
 position = Vector2(15, -235)
+limit_left = -1440
 limit_top = 0
 limit_bottom = 0
-
-[node name="Node2D" parent="." instance=ExtResource("11_hoqts")]
-position = Vector2(164, 49)
 
 [node name="Pinchos" type="Node" parent="."]
 
@@ -1625,6 +1623,8 @@ rotation = 0.71733
 [node name="Area2D5" parent="Rayo" instance=ExtResource("13_3j2e4")]
 position = Vector2(655, 502)
 scale = Vector2(1.95, 1.95)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("13_gydgu")]
 
 [node name="Ultima_escenaMapa2" type="Control" parent="."]
 layout_mode = 3

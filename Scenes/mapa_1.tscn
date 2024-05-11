@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="4_u2vqb"]
 [ext_resource type="Texture2D" uid="uid://b0yvvr2xjlodn" path="res://Resources/Tilemaps/Cyber_2/Assets/Props-01.png" id="5_uhkv2"]
 [ext_resource type="PackedScene" uid="uid://bwppkoqx0wytc" path="res://Scenes/jugador.tscn" id="6_o3p4c"]
-[ext_resource type="PackedScene" uid="uid://cyxleru3ieghy" path="res://Scenes/contador.tscn" id="7_37jd3"]
 [ext_resource type="Texture2D" uid="uid://dtvv1b47r0g0f" path="res://Resources/bacground/cyberpunk-street-files/Version 1/PNG/layers/far-buildings.png" id="10_enx0a"]
 [ext_resource type="AudioStream" uid="uid://dkkj4ia8ajbbq" path="res://Resources/Musica/581358__podcapocalipsis__another-melody-for-a-indie-videogame-or-something.wav" id="10_y2ug1"]
 [ext_resource type="Texture2D" uid="uid://bplmse2w7pxyh" path="res://Resources/bacground/cyberpunk-street-files/Version 1/PNG/layers/back-buildings.png" id="11_o1bug"]
@@ -13,6 +12,7 @@
 [ext_resource type="Script" path="res://Scripts/Ultima_escenaMapa1.gd" id="12_pb8rt"]
 [ext_resource type="Texture2D" uid="uid://7onhoxrjm1j2" path="res://Resources/bacground/cyberpunk-street-files/Version 1/PNG/layers/foreground.png" id="12_u80df"]
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="13_3tvte"]
+[ext_resource type="PackedScene" uid="uid://ca6ton52sif71" path="res://Scenes/canvas_layer.tscn" id="13_oewjk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("3_6nn5r")
@@ -1509,7 +1509,7 @@ anchor_bottom = 1.0
 offset_left = -436.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.192157)
+color = Color(0, 0, 0, 0.533333)
 
 [node name="Suelo" type="TileMap" parent="."]
 scale = Vector2(1.5, 1.5)
@@ -1526,11 +1526,6 @@ limit_left = -465
 limit_top = 0
 limit_right = 960
 limit_bottom = 0
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Node2D" parent="CanvasLayer" instance=ExtResource("7_37jd3")]
-position = Vector2(164, 49)
 
 [node name="Ultima_escenaMapa1" type="Control" parent="."]
 layout_mode = 3
@@ -1552,3 +1547,8 @@ rotation = 0.466003
 [node name="Area2D4" parent="Laser" instance=ExtResource("13_3tvte")]
 position = Vector2(867, 177)
 rotation = 0.466003
+
+[node name="Monedas" type="Node2D" parent="."]
+position = Vector2(-436, 0)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("13_oewjk")]

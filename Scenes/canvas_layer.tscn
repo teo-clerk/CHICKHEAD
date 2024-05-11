@@ -8,4 +8,5 @@
 [node name="MenuInGame" parent="." instance=ExtResource("1_luwcf")]
 
 [node name="Contador" parent="." instance=ExtResource("2_0j8fp")]
-position = Vector2(136, 80)
+position = Vector2(51, 35)
+scale = Vector2(0.5, 0.5)

@@ -13,7 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://bivx18si1gkax" path="res://Resources/Musica/epic-hybrid-logo-157092.mp3" id="11_bfevi"]
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="12_pjtb3"]
 [ext_resource type="PackedScene" uid="uid://c3gce40a68k5g" path="res://Scenes/rayo.tscn" id="13_0a7tm"]
-[ext_resource type="Script" path="res://Scenes/Ultima_escenaMapaPrueba.gd" id="14_lgqn6"]
+[ext_resource type="Script" path="res://Scripts/Ultima_escenaMapaPrueba.gd" id="14_lgqn6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("1_cffki")
