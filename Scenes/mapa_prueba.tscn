@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://ccjrpgi7gsych"]
+[gd_scene load_steps=20 format=3 uid="uid://ccjrpgi7gsych"]
 
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="1_cffki"]
 [ext_resource type="Script" path="res://Scripts/Global.gd" id="1_p7k3g"]
@@ -14,8 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bdtlfebfm187c" path="res://Scenes/clau.tscn" id="12_r5sxj"]
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="13_4lg6r"]
 [ext_resource type="Script" path="res://Scripts/ConfiguracioTutorial.gd" id="14_lgqn6"]
-[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/porta.tscn" id="15_y2qpd"]
-[ext_resource type="PackedScene" uid="uid://c3gce40a68k5g" path="res://Scenes/rayo.tscn" id="16_sacqn"]
+[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/Porta.tscn" id="15_y2qpd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("1_cffki")
@@ -1421,19 +1420,12 @@ text = "Per poder moure't clica amb el botó esquerre del ratolí i de mentre mo
 
 Apareixerà una línia predictora en forma de paràbola."
 
-[node name="Claus" type="RichTextLabel" parent="Tutorial"]
+[node name="Planejar2" type="RichTextLabel" parent="Tutorial"]
 offset_left = 576.0
 offset_top = 176.0
 offset_right = 776.0
 offset_bottom = 280.0
 text = "Agafa totes les claus, passant per sobre, per poder obrir la porta que és al final del nivell."
-
-[node name="Rayo" type="RichTextLabel" parent="Tutorial"]
-offset_left = 824.0
-offset_top = 216.0
-offset_right = 1024.0
-offset_bottom = 264.0
-text = "Passa a través del raig quan aquest s'apagui."
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(1.5, 1.5)
@@ -1511,15 +1503,3 @@ position = Vector2(15, -235)
 limit_left = -48
 limit_top = 0
 limit_bottom = 0
-
-[node name="Area2D" parent="." instance=ExtResource("16_sacqn")]
-position = Vector2(1080, 464)
-
-[node name="Area2D2" parent="." instance=ExtResource("16_sacqn")]
-position = Vector2(1080, 320)
-
-[node name="Area2D3" parent="." instance=ExtResource("16_sacqn")]
-position = Vector2(1080, 176)
-
-[node name="Area2D4" parent="." instance=ExtResource("16_sacqn")]
-position = Vector2(1080, 32)
