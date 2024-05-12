@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="13_3tvte"]
 [ext_resource type="PackedScene" uid="uid://ca6ton52sif71" path="res://Scenes/canvas_layer.tscn" id="13_oewjk"]
 [ext_resource type="PackedScene" uid="uid://bdtlfebfm187c" path="res://Scenes/clau.tscn" id="14_jnpur"]
-[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/porta.tscn" id="15_q00mb"]
+[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/Porta.tscn" id="15_q00mb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("3_6nn5r")
@@ -1550,15 +1550,15 @@ position = Vector2(816, 474)
 [node name="Laser" type="Node2D" parent="."]
 
 [node name="Area2D" parent="Laser" instance=ExtResource("13_3tvte")]
-position = Vector2(659, 75)
+position = Vector2(689, 83)
 rotation = 0.466003
 
 [node name="Area2D2" parent="Laser" instance=ExtResource("13_3tvte")]
-position = Vector2(762, 127)
+position = Vector2(790, 134)
 rotation = 0.466003
 
 [node name="Area2D4" parent="Laser" instance=ExtResource("13_3tvte")]
-position = Vector2(867, 177)
+position = Vector2(890, 186)
 rotation = 0.466003
 
 [node name="Monedas" type="Node2D" parent="."]
