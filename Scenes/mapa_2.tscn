@@ -1,9 +1,10 @@
-[gd_scene load_steps=19 format=3 uid="uid://b14yhr8ofc81"]
+[gd_scene load_steps=21 format=3 uid="uid://b14yhr8ofc81"]
 
 [ext_resource type="Script" path="res://Scripts/Global.gd" id="1_10mib"]
 [ext_resource type="AudioStream" uid="uid://dkkj4ia8ajbbq" path="res://Resources/Musica/581358__podcapocalipsis__another-melody-for-a-indie-videogame-or-something.wav" id="2_26l76"]
 [ext_resource type="AudioStream" uid="uid://bivx18si1gkax" path="res://Resources/Musica/epic-hybrid-logo-157092.mp3" id="3_fhvtq"]
 [ext_resource type="Texture2D" uid="uid://dtvv1b47r0g0f" path="res://Resources/bacground/cyberpunk-street-files/Version 1/PNG/layers/far-buildings.png" id="4_kja4t"]
+[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/porta.tscn" id="4_omjv7"]
 [ext_resource type="Texture2D" uid="uid://bplmse2w7pxyh" path="res://Resources/bacground/cyberpunk-street-files/Version 1/PNG/layers/back-buildings.png" id="5_k8wic"]
 [ext_resource type="Texture2D" uid="uid://7onhoxrjm1j2" path="res://Resources/bacground/cyberpunk-street-files/Version 1/PNG/layers/foreground.png" id="6_6siar"]
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="7_1uu81"]
@@ -14,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://c3gce40a68k5g" path="res://Scenes/rayo.tscn" id="13_3j2e4"]
 [ext_resource type="PackedScene" uid="uid://ca6ton52sif71" path="res://Scenes/canvas_layer.tscn" id="13_gydgu"]
 [ext_resource type="Script" path="res://Scripts/ConfiguracioMapa2.gd" id="14_dv3b0"]
+[ext_resource type="PackedScene" uid="uid://bdtlfebfm187c" path="res://Scenes/clau.tscn" id="16_8u8s4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("7_1uu81")
@@ -1468,6 +1470,9 @@ autoplay = true
 stream = ExtResource("3_fhvtq")
 autoplay = true
 
+[node name="Porta" parent="." instance=ExtResource("4_omjv7")]
+position = Vector2(3904, 552)
+
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="1" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1628,3 +1633,12 @@ scale = Vector2(2.86, 2.86)
 
 [node name="ConfiguracoNivell" type="Node" parent="."]
 script = ExtResource("14_dv3b0")
+
+[node name="Area2D7" parent="." instance=ExtResource("16_8u8s4")]
+position = Vector2(-1352, 352)
+
+[node name="Area2D8" parent="." instance=ExtResource("16_8u8s4")]
+position = Vector2(-848, 40)
+
+[node name="Area2D9" parent="." instance=ExtResource("16_8u8s4")]
+position = Vector2(680, 328)
