@@ -1634,11 +1634,13 @@ scale = Vector2(2.86, 2.86)
 [node name="ConfiguracoNivell" type="Node" parent="."]
 script = ExtResource("14_dv3b0")
 
-[node name="Area2D7" parent="." instance=ExtResource("16_8u8s4")]
+[node name="Claus" type="Node" parent="."]
+
+[node name="Area2D7" parent="Claus" instance=ExtResource("16_8u8s4")]
 position = Vector2(-1352, 352)
 
-[node name="Area2D8" parent="." instance=ExtResource("16_8u8s4")]
+[node name="Area2D8" parent="Claus" instance=ExtResource("16_8u8s4")]
 position = Vector2(-848, 40)
 
-[node name="Area2D9" parent="." instance=ExtResource("16_8u8s4")]
+[node name="Area2D9" parent="Claus" instance=ExtResource("16_8u8s4")]
 position = Vector2(680, 328)
