@@ -7,7 +7,7 @@
 size = Vector2(93, 146)
 
 [node name="Porta" type="Area2D"]
-collision_layer = 4
+collision_layer = 12
 collision_mask = 2
 script = ExtResource("1_licse")
 

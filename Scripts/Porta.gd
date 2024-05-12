@@ -15,7 +15,7 @@ func _on_body_entered(body):
 	var claus_necessaries :int = Global.claus_necessaries
 	var claus :int = Global.claus
 	print("dentro")
-	if claus_necessaries == claus:
+	if claus_necessaries <= claus:
 		Global.claus = 0
 		print("Victoria")
 		get_tree().change_scene_to_file("res://Scenes/victoria.tscn")  # Replace with function body.
