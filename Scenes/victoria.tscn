@@ -28,12 +28,6 @@ theme_override_font_sizes/normal_font_size = 90
 bbcode_enabled = true
 text = "[center]VICTORIA[/center]"
 
-[node name="Accent" type="Sprite2D" parent="."]
-position = Vector2(497, 86)
-rotation = 0.699877
-scale = Vector2(0.159864, 0.149351)
-texture = ExtResource("3_4ixcr")
-
 [node name="BoxContainer" type="BoxContainer" parent="."]
 anchors_preset = 4
 anchor_top = 0.5
@@ -50,7 +44,7 @@ vertical = true
 [node name="TryAgain" type="Button" parent="BoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_grkmi")
-text = "TRY AGAIN"
+text = "TORNA A INTENTAR-HO"
 
 [node name="Menu" type="Button" parent="BoxContainer"]
 layout_mode = 2
@@ -60,7 +54,20 @@ text = "MENU"
 [node name="Exit" type="Button" parent="BoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_grkmi")
-text = "EXIT"
+text = "SORTIR"
+
+[node name="Accent2" type="Sprite2D" parent="."]
+position = Vector2(492, 312)
+rotation = 1.98968
+scale = Vector2(0.024873, 0.0229702)
+skew = 0.0669829
+texture = ExtResource("3_4ixcr")
+
+[node name="Accent" type="Sprite2D" parent="."]
+position = Vector2(497, 86)
+rotation = 0.699877
+scale = Vector2(0.159864, 0.149351)
+texture = ExtResource("3_4ixcr")
 
 [connection signal="pressed" from="BoxContainer/TryAgain" to="." method="_on_try_again_pressed"]
 [connection signal="pressed" from="BoxContainer/Menu" to="." method="_on_menu_pressed"]

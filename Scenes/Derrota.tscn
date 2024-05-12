@@ -31,9 +31,9 @@ text = "[center]DERROTA[/center]"
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 400.0
+offset_left = 384.0
 offset_top = 136.0
-offset_right = 559.0
+offset_right = 576.0
 offset_bottom = 512.0
 grow_vertical = 2
 size_flags_horizontal = 4
@@ -42,15 +42,15 @@ vertical = true
 
 [node name="TornarAIntentar" type="Button" parent="BoxContainer"]
 layout_mode = 2
-text = "Torna a intentar-ho"
+text = "TORNA A INTENTAR-HO"
 
 [node name="Menu" type="Button" parent="BoxContainer"]
 layout_mode = 2
-text = "Menú"
+text = "MENÚ"
 
 [node name="Sortir" type="Button" parent="BoxContainer"]
 layout_mode = 2
-text = "Sortir"
+text = "SORTIR"
 
 [connection signal="pressed" from="BoxContainer/TornarAIntentar" to="." method="_on_tornar_a_intentar_pressed"]
 [connection signal="pressed" from="BoxContainer/Menu" to="." method="_on_menu_pressed"]
