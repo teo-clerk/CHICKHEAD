@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://ccjrpgi7gsych"]
+[gd_scene load_steps=21 format=3 uid="uid://ccjrpgi7gsych"]
 
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="1_cffki"]
 [ext_resource type="Script" path="res://Scripts/Global.gd" id="1_p7k3g"]
@@ -13,8 +13,9 @@
 [ext_resource type="PackedScene" uid="uid://ca6ton52sif71" path="res://Scenes/canvas_layer.tscn" id="12_05xru"]
 [ext_resource type="PackedScene" uid="uid://bdtlfebfm187c" path="res://Scenes/clau.tscn" id="12_r5sxj"]
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="13_4lg6r"]
+[ext_resource type="PackedScene" uid="uid://c3gce40a68k5g" path="res://Scenes/rayo.tscn" id="13_n25qe"]
 [ext_resource type="Script" path="res://Scripts/ConfiguracioTutorial.gd" id="14_lgqn6"]
-[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/Porta.tscn" id="15_y2qpd"]
+[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/porta.tscn" id="15_y2qpd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("1_cffki")
@@ -1483,6 +1484,18 @@ position = Vector2(1736, 512)
 
 [node name="Area2D8" parent="Rayos" instance=ExtResource("13_4lg6r")]
 position = Vector2(1856, 512)
+
+[node name="Area2D9" parent="Rayos" instance=ExtResource("13_n25qe")]
+position = Vector2(1078, 458)
+
+[node name="Area2D10" parent="Rayos" instance=ExtResource("13_n25qe")]
+position = Vector2(1078, 320)
+
+[node name="Area2D11" parent="Rayos" instance=ExtResource("13_n25qe")]
+position = Vector2(1078, 183)
+
+[node name="Area2D12" parent="Rayos" instance=ExtResource("13_n25qe")]
+position = Vector2(1078, 45)
 
 [node name="Claus" type="Node" parent="."]
 
