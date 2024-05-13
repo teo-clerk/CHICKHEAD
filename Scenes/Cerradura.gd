@@ -5,7 +5,7 @@ extends Node
 func _ready():
 	if Global.nivell1_enable:
 		$Cerradura.hide()
-	elif Global.nivell2_enable:
+	if Global.nivell2_enable:
 		$Cerradura2.hide()
-	elif Global.nivell3_enable:
+	if Global.nivell3_enable:
 		$Cerradura3.hide()
