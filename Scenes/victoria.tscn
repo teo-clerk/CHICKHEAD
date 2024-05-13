@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bapdolxf7kn6q"]
+[gd_scene load_steps=6 format=3 uid="uid://bapdolxf7kn6q"]
 
 [ext_resource type="Script" path="res://Scripts/victoria.gd" id="1_kqkuu"]
 [ext_resource type="Texture2D" uid="uid://bfbsnux3naqaw" path="res://Resources/Base Color.png" id="1_s61r2"]
 [ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Fonts/8-bit-limit/8bitlimr.ttf" id="2_grkmi"]
 [ext_resource type="Texture2D" uid="uid://c2e3k4k4istde" path="res://Fonts/8-bit-limit/Accent.png" id="3_4ixcr"]
+[ext_resource type="Texture2D" uid="uid://q03beugv5lju" path="res://Resources/star_PNG41495.png" id="5_vcdu0"]
 
 [node name="Victoria" type="Node2D"]
 script = ExtResource("1_kqkuu")
@@ -58,6 +59,24 @@ position = Vector2(497, 86)
 rotation = 0.699877
 scale = Vector2(0.159864, 0.149351)
 texture = ExtResource("3_4ixcr")
+
+[node name="Estrella1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(416, 224)
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("5_vcdu0")
+
+[node name="Estrella2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(480, 224)
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("5_vcdu0")
+
+[node name="Estrella3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(544, 224)
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("5_vcdu0")
 
 [connection signal="pressed" from="BoxContainer/TryAgain" to="." method="_on_try_again_pressed"]
 [connection signal="pressed" from="BoxContainer/Menu" to="." method="_on_menu_pressed"]
