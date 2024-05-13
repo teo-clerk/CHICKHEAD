@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://pwuok1fnhkix"]
+[gd_scene load_steps=21 format=3 uid="uid://pwuok1fnhkix"]
 
 [ext_resource type="Script" path="res://Scripts/ConfiguracioMapa1.gd" id="2_o2hto"]
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="3_6nn5r"]
@@ -13,7 +13,9 @@
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="13_3tvte"]
 [ext_resource type="PackedScene" uid="uid://ca6ton52sif71" path="res://Scenes/canvas_layer.tscn" id="13_oewjk"]
 [ext_resource type="PackedScene" uid="uid://bdtlfebfm187c" path="res://Scenes/clau.tscn" id="14_jnpur"]
+[ext_resource type="PackedScene" uid="uid://bvoxyc8e4k3y5" path="res://Scenes/moneda_normal.tscn" id="15_4jwcy"]
 [ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/Porta.tscn" id="15_q00mb"]
+[ext_resource type="PackedScene" uid="uid://djpn4r1ikeehw" path="res://Scenes/moneda_dorada.tscn" id="16_43h5f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("3_6nn5r")
@@ -1560,6 +1562,77 @@ position = Vector2(890, 186)
 rotation = 0.466003
 
 [node name="Monedas" type="Node2D" parent="."]
-position = Vector2(-436, 0)
+
+[node name="MonedaNormal" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(-400, 104)
+
+[node name="MonedaNormal2" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(-400, 200)
+
+[node name="MonedaDorada" parent="Monedas" instance=ExtResource("16_43h5f")]
+position = Vector2(-104, 368)
+
+[node name="MonedaDorada2" parent="Monedas" instance=ExtResource("16_43h5f")]
+position = Vector2(-72, 144)
+
+[node name="MonedaNormal3" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(40, 200)
+
+[node name="MonedaDorada3" parent="Monedas" instance=ExtResource("16_43h5f")]
+position = Vector2(336, 48)
+
+[node name="MonedaNormal4" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(936, 464)
+
+[node name="MonedaDorada4" parent="Monedas" instance=ExtResource("16_43h5f")]
+position = Vector2(808, 48)
+
+[node name="MonedaDorada5" parent="Monedas" instance=ExtResource("16_43h5f")]
+position = Vector2(472, 304)
+
+[node name="MonedaNormal5" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(664, 272)
+
+[node name="MonedaNormal6" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(584, 200)
+
+[node name="MonedaNormal7" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(432, 120)
+
+[node name="MonedaDorada6" parent="Monedas" instance=ExtResource("16_43h5f")]
+position = Vector2(432, 48)
+
+[node name="MonedaNormal8" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(448, 464)
+
+[node name="MonedaNormal9" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(488, 464)
+
+[node name="MonedaNormal10" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(528, 464)
+
+[node name="MonedaNormal11" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(568, 464)
+
+[node name="MonedaNormal12" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(608, 464)
+
+[node name="MonedaDorada7" parent="Monedas" instance=ExtResource("16_43h5f")]
+position = Vector2(648, 464)
+
+[node name="MonedaNormal13" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(192, 368)
+
+[node name="MonedaNormal14" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(40, 320)
+
+[node name="MonedaNormal15" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(152, 240)
+
+[node name="MonedaNormal16" parent="Monedas" instance=ExtResource("15_4jwcy")]
+position = Vector2(192, 168)
+
+[node name="MonedaDorada8" parent="Monedas" instance=ExtResource("16_43h5f")]
+position = Vector2(56, 104)
 
 [node name="CanvasLayer" parent="." instance=ExtResource("13_oewjk")]
