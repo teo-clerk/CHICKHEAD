@@ -7,4 +7,5 @@ func _ready():
 	Global.claus_necessaries = 7
 	Global.claus = 0
 	Global.monedes = 0
+	Global.pollastres_necessaris = 95
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://b14yhr8ofc81"]
+[gd_scene load_steps=22 format=3 uid="uid://b14yhr8ofc81"]
 
 [ext_resource type="AudioStream" uid="uid://dkkj4ia8ajbbq" path="res://Resources/Musica/581358__podcapocalipsis__another-melody-for-a-indie-videogame-or-something.wav" id="2_26l76"]
 [ext_resource type="AudioStream" uid="uid://bivx18si1gkax" path="res://Resources/Musica/epic-hybrid-logo-157092.mp3" id="3_fhvtq"]
@@ -15,6 +15,8 @@
 [ext_resource type="PackedScene" uid="uid://ca6ton52sif71" path="res://Scenes/canvas_layer.tscn" id="13_gydgu"]
 [ext_resource type="Script" path="res://Scripts/ConfiguracioMapa2.gd" id="14_dv3b0"]
 [ext_resource type="PackedScene" uid="uid://bdtlfebfm187c" path="res://Scenes/clau.tscn" id="16_8u8s4"]
+[ext_resource type="PackedScene" uid="uid://bvoxyc8e4k3y5" path="res://Scenes/moneda_normal.tscn" id="16_s26hm"]
+[ext_resource type="PackedScene" uid="uid://djpn4r1ikeehw" path="res://Scenes/moneda_dorada.tscn" id="17_ydgad"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("7_1uu81")
@@ -2299,3 +2301,163 @@ scale = Vector2(0.405, 0.405)
 
 [node name="Area2D7" parent="." instance=ExtResource("16_8u8s4")]
 position = Vector2(4183, 24)
+
+[node name="MonedaNormal" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(-1164, 58)
+
+[node name="MonedaNormal2" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(-1045, 226)
+
+[node name="MonedaNormal3" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(-1166, 130)
+
+[node name="MonedaNormal4" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(-711, 269)
+
+[node name="MonedaNormal5" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(-472, 343)
+
+[node name="MonedaNormal6" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(-214, 80)
+
+[node name="MonedaDorada" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(-589, 78)
+
+[node name="MonedaNormal7" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(-175, 111)
+
+[node name="MonedaDorada2" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(27, 33)
+
+[node name="MonedaDorada3" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(1637, 343)
+
+[node name="MonedaNormal8" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(1580, 441)
+
+[node name="MonedaNormal9" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(1502, 445)
+
+[node name="MonedaNormal10" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(1420, 441)
+
+[node name="MonedaDorada4" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(1643, 247)
+
+[node name="MonedaDorada5" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(687, 150)
+
+[node name="MonedaDorada6" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(1624, 49)
+
+[node name="MonedaNormal11" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(1763, 467)
+
+[node name="MonedaNormal12" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(1842, 449)
+
+[node name="MonedaNormal13" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(1921, 444)
+
+[node name="MonedaNormal14" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(2383, 462)
+
+[node name="MonedaNormal15" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(2528, 438)
+
+[node name="MonedaNormal16" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(2660, 371)
+
+[node name="MonedaNormal17" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(2765, 413)
+
+[node name="MonedaNormal18" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(2805, 396)
+
+[node name="MonedaNormal19" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(2838, 401)
+
+[node name="MonedaNormal20" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(2978, 443)
+
+[node name="MonedaDorada7" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(1832, 251)
+
+[node name="MonedaDorada8" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(2122, 31)
+
+[node name="MonedaDorada9" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(3072, 22)
+
+[node name="MonedaDorada10" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(3097, 371)
+scale = Vector2(2.45, 2.45)
+
+[node name="MonedaNormal21" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(3182, 513)
+
+[node name="MonedaNormal22" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(2672, 31)
+
+[node name="MonedaDorada11" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(717, 505)
+
+[node name="MonedaNormal23" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(75, 249)
+
+[node name="MonedaNormal24" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(2545, 109)
+
+[node name="MonedaDorada12" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(3214, 201)
+
+[node name="MonedaDorada13" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(3279, 271)
+
+[node name="MonedaNormal25" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(3239, 390)
+
+[node name="MonedaDorada14" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(3621, 376)
+
+[node name="MonedaDorada15" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(3540, 174)
+
+[node name="MonedaDorada16" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(3634, 266)
+
+[node name="MonedaNormal26" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(3411, 255)
+
+[node name="MonedaNormal27" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(3416, 193)
+
+[node name="MonedaNormal28" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(3876, 170)
+
+[node name="MonedaDorada17" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(3419, 52)
+
+[node name="MonedaDorada18" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(4014, 267)
+
+[node name="MonedaDorada19" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(3851, 53)
+
+[node name="MonedaNormal29" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(4087, 436)
+
+[node name="MonedaNormal30" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(1977, 201)
+
+[node name="MonedaNormal31" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(2197, 95)
+
+[node name="MonedaDorada20" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(-1210, 463)
+
+[node name="MonedaDorada21" parent="." instance=ExtResource("17_ydgad")]
+position = Vector2(-733, 391)
+
+[node name="MonedaNormal32" parent="." instance=ExtResource("16_s26hm")]
+position = Vector2(-442, 149)
