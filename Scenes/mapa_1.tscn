@@ -1,6 +1,5 @@
-[gd_scene load_steps=20 format=3 uid="uid://pwuok1fnhkix"]
+[gd_scene load_steps=19 format=3 uid="uid://pwuok1fnhkix"]
 
-[ext_resource type="Script" path="res://Scripts/Global.gd" id="1_v0pdr"]
 [ext_resource type="Script" path="res://Scripts/ConfiguracioMapa1.gd" id="2_o2hto"]
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="3_6nn5r"]
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="4_u2vqb"]
@@ -1458,7 +1457,6 @@ sources/1 = SubResource("TileSetAtlasSource_8jcx1")
 sources/2 = SubResource("TileSetAtlasSource_m8n7f")
 
 [node name="MapaPrueba" type="Node2D"]
-script = ExtResource("1_v0pdr")
 
 [node name="ConfiguracioNivell" type="Node" parent="."]
 script = ExtResource("2_o2hto")

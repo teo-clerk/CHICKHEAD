@@ -5,4 +5,6 @@ extends Node
 func _ready():
 	Global.escena_anerior = "res://Scenes/mapa_prueba.tscn" # Replace with function body.
 	Global.claus_necessaries = 2
+	Global.claus = 0
+	Global.monedes = 0
 
