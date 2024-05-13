@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://di6pk5fs4p4ci"]
+[gd_scene load_steps=20 format=3 uid="uid://di6pk5fs4p4ci"]
 
 [ext_resource type="Script" path="res://Scripts/Mapa0.gd" id="1_gsnnf"]
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="2_mpc1l"]
@@ -13,6 +13,7 @@
 [ext_resource type="Script" path="res://Scripts/Ultima_escenaMapa0.gd" id="11_l4fdn"]
 [ext_resource type="Script" path="res://Scripts/Global.gd" id="12_lx5eb"]
 [ext_resource type="PackedScene" uid="uid://ca6ton52sif71" path="res://Scenes/canvas_layer.tscn" id="12_sdv1r"]
+[ext_resource type="AudioStream" uid="uid://csiremfy62jr1" path="res://Resources/Musica/Sport Cyberpunk G-House by Infraction [No Copyright Music] - Shock Absorber (320).mp3" id="14_tylhg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y1eec"]
 texture = ExtResource("2_mpc1l")
@@ -1659,6 +1660,11 @@ script = ExtResource("11_l4fdn")
 
 [node name="Global" type="Node" parent="."]
 script = ExtResource("12_lx5eb")
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_tylhg")
+volume_db = 7.913
+autoplay = true
 
 [connection signal="body_entered" from="porta final" to="." method="_on_porta_final_body_entered"]
 

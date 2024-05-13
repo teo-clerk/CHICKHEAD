@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cthuvcfjfix53"]
+[gd_scene load_steps=24 format=3 uid="uid://cthuvcfjfix53"]
 
 [ext_resource type="Texture2D" uid="uid://bfbsnux3naqaw" path="res://Resources/Base Color.png" id="1_8amn2"]
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="2_yfwce"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://pwuok1fnhkix" path="res://Scenes/mapa_1.tscn" id="10_bnwcw"]
 [ext_resource type="Script" path="res://Scripts/TornarAlMenú.gd" id="11_mwhfi"]
 [ext_resource type="PackedScene" uid="uid://b14yhr8ofc81" path="res://Scenes/mapa_2.tscn" id="12_ttaqq"]
+[ext_resource type="AudioStream" uid="uid://csiremfy62jr1" path="res://Resources/Musica/Sport Cyberpunk G-House by Infraction [No Copyright Music] - Shock Absorber (320).mp3" id="15_pr0gi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("2_yfwce")
@@ -1524,6 +1525,11 @@ script = ExtResource("11_mwhfi")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Butons/TornarAlMenú/StaticBody2D"]
 position = Vector2(68, 22.5)
 shape = SubResource("RectangleShape2D_30fc7")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_pr0gi")
+volume_db = 7.913
+autoplay = true
 
 [connection signal="pressed" from="Butons/HBoxContainer/Nivell1" to="Butons/HBoxContainer/Nivell1" method="_on_pressed"]
 [connection signal="pressed" from="Butons/HBoxContainer/Nivell2" to="Butons/HBoxContainer/Nivell2" method="_on_pressed"]

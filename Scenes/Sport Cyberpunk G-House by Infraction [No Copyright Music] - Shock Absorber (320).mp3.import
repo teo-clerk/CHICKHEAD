@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cjncqk4js07ig"
+path="res://.godot/imported/Sport Cyberpunk G-House by Infraction [No Copyright Music] - Shock Absorber (320).mp3-cf5defb2238f1459670c1ce4a5981451.mp3str"
+
+[deps]
+
+source_file="res://Scenes/Sport Cyberpunk G-House by Infraction [No Copyright Music] - Shock Absorber (320).mp3"
+dest_files=["res://.godot/imported/Sport Cyberpunk G-House by Infraction [No Copyright Music] - Shock Absorber (320).mp3-cf5defb2238f1459670c1ce4a5981451.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
