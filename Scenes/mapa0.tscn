@@ -1,6 +1,5 @@
-[gd_scene load_steps=19 format=3 uid="uid://di6pk5fs4p4ci"]
+[gd_scene load_steps=17 format=3 uid="uid://di6pk5fs4p4ci"]
 
-[ext_resource type="Script" path="res://Scripts/Mapa0.gd" id="1_gsnnf"]
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="2_mpc1l"]
 [ext_resource type="Texture2D" uid="uid://b0yvvr2xjlodn" path="res://Resources/Tilemaps/Cyber_2/Assets/Props-01.png" id="3_blnqu"]
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="4_2lypf"]
@@ -1565,11 +1564,7 @@ sources/0 = SubResource("TileSetAtlasSource_y1eec")
 sources/1 = SubResource("TileSetAtlasSource_1l7fd")
 sources/2 = SubResource("TileSetAtlasSource_2c2le")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_n18ui"]
-size = Vector2(116.75, 203)
-
 [node name="mapa0" type="Node2D"]
-script = ExtResource("1_gsnnf")
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(3, 3)
@@ -1624,14 +1619,6 @@ position = Vector2(4134, 98)
 [node name="Area2D10" parent="." instance=ExtResource("8_f32hv")]
 position = Vector2(596, 251)
 
-[node name="porta final" type="Area2D" parent="."]
-collision_layer = 8
-collision_mask = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="porta final"]
-position = Vector2(5494.63, 421.5)
-shape = SubResource("RectangleShape2D_n18ui")
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(5336, 297)
@@ -1659,7 +1646,5 @@ script = ExtResource("11_l4fdn")
 
 [node name="Global" type="Node" parent="."]
 script = ExtResource("12_lx5eb")
-
-[connection signal="body_entered" from="porta final" to="." method="_on_porta_final_body_entered"]
 
 [editable path="Node2D"]
