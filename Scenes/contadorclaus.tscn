@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0srvoay725mi"]
+
+[ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Fonts/8-bit-limit/8bitlimr.ttf" id="1_pmgvf"]
+[ext_resource type="Script" path="res://Scenes/Puntuació.gd" id="2_lcekn"]
+[ext_resource type="Texture2D" uid="uid://bc13s4yoym5vd" path="res://clau.png" id="3_sqmwp"]
+
+[node name="Contador" type="Node2D"]
+
+[node name="Puntuació" type="Label" parent="."]
+texture_filter = 1
+offset_left = 28.0
+offset_top = -38.0
+offset_right = 86.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("1_pmgvf")
+theme_override_font_sizes/font_size = 71
+text = "0"
+script = ExtResource("2_lcekn")
+
+[node name="Icona" type="Sprite2D" parent="."]
+position = Vector2(-93, -9)
+texture = ExtResource("3_sqmwp")
+region_enabled = true
+region_rect = Rect2(-6.01819, 0, 383.202, 320)
