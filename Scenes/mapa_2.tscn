@@ -1,6 +1,5 @@
-[gd_scene load_steps=21 format=3 uid="uid://b14yhr8ofc81"]
+[gd_scene load_steps=20 format=3 uid="uid://b14yhr8ofc81"]
 
-[ext_resource type="Script" path="res://Scenes/mapa_2.gd" id="1_qdt35"]
 [ext_resource type="AudioStream" uid="uid://dkkj4ia8ajbbq" path="res://Resources/Musica/581358__podcapocalipsis__another-melody-for-a-indie-videogame-or-something.wav" id="2_26l76"]
 [ext_resource type="AudioStream" uid="uid://bivx18si1gkax" path="res://Resources/Musica/epic-hybrid-logo-157092.mp3" id="3_fhvtq"]
 [ext_resource type="Texture2D" uid="uid://dtvv1b47r0g0f" path="res://Resources/bacground/cyberpunk-street-files/Version 1/PNG/layers/far-buildings.png" id="4_kja4t"]
@@ -1495,7 +1494,6 @@ sources/1 = SubResource("TileSetAtlasSource_8jcx1")
 sources/2 = SubResource("TileSetAtlasSource_m8n7f")
 
 [node name="Mapa2" type="Node2D"]
-script = ExtResource("1_qdt35")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_26l76")
