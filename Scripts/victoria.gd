@@ -5,10 +5,10 @@ func _ready():
 		$Estrella1.show()
 		$Estrella2.show()
 		$Estrella3.show()
-	elif Global.pollastres_necessaris * 0.5 >= Global.monedes:
+	elif Global.pollastres_necessaris * 0.5 <= Global.monedes:
 		$Estrella1.show()
 		$Estrella2.show()
-	elif Global.pollastres_necessaris * 0.1 >= Global.monedes:
+	elif Global.pollastres_necessaris * 0.1 <= Global.monedes:
 		$Estrella1.show()
 
 func _on_menu_pressed():
