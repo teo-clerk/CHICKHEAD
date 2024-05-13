@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://b14yhr8ofc81"]
 
-[ext_resource type="Script" path="res://Scripts/Global.gd" id="1_10mib"]
+[ext_resource type="Script" path="res://Scenes/mapa_2.gd" id="1_qdt35"]
 [ext_resource type="AudioStream" uid="uid://dkkj4ia8ajbbq" path="res://Resources/Musica/581358__podcapocalipsis__another-melody-for-a-indie-videogame-or-something.wav" id="2_26l76"]
 [ext_resource type="AudioStream" uid="uid://bivx18si1gkax" path="res://Resources/Musica/epic-hybrid-logo-157092.mp3" id="3_fhvtq"]
 [ext_resource type="Texture2D" uid="uid://dtvv1b47r0g0f" path="res://Resources/bacground/cyberpunk-street-files/Version 1/PNG/layers/far-buildings.png" id="4_kja4t"]
@@ -1495,7 +1495,7 @@ sources/1 = SubResource("TileSetAtlasSource_8jcx1")
 sources/2 = SubResource("TileSetAtlasSource_m8n7f")
 
 [node name="Mapa2" type="Node2D"]
-script = ExtResource("1_10mib")
+script = ExtResource("1_qdt35")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_26l76")
@@ -1701,7 +1701,6 @@ position = Vector2(2816, 268)
 [node name="Area2D38" parent="Pinchos" instance=ExtResource("12_jcubh")]
 position = Vector2(2891, 234)
 rotation = 2.34572
-scale = Vector2(3, 3)
 
 [node name="Area2D39" parent="Pinchos" instance=ExtResource("12_jcubh")]
 position = Vector2(2982, 191)
@@ -1756,7 +1755,6 @@ rotation = -0.876155
 [node name="Area2D53" parent="Pinchos" instance=ExtResource("12_jcubh")]
 position = Vector2(3962, 331)
 rotation = -1.46084
-scale = Vector2(3, 3)
 
 [node name="Area2D54" parent="Pinchos" instance=ExtResource("12_jcubh")]
 position = Vector2(3975, 231)
@@ -1792,7 +1790,6 @@ rotation = 1.56032
 [node name="Area2D63" parent="Pinchos" instance=ExtResource("12_jcubh")]
 position = Vector2(3386, 307)
 rotation = -0.00872665
-scale = Vector2(3, 3)
 
 [node name="Area2D64" parent="Pinchos" instance=ExtResource("12_jcubh")]
 position = Vector2(3497, 307)
