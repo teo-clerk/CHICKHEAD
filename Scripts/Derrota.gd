@@ -1,6 +1,8 @@
 extends Node2D
 
-
+func _ready():
+	Global.claus = 0
+	Global.monedes = 0
 func _on_tornar_a_intentar_pressed():
 	get_tree().change_scene_to_file(Global.escena_anerior) # Replace with function body.
 
