@@ -13,4 +13,5 @@ func _process(delta):
 
 
 func _on_pressed():
-	get_tree().change_scene_to_packed(escena)
+	if Global.nivell3_enable:
+		get_tree().change_scene_to_packed(escena)

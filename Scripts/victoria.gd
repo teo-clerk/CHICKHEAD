@@ -10,6 +10,8 @@ func _ready():
 		$Estrella2.show()
 	elif Global.pollastres_necessaris * 0.1 <= Global.monedes:
 		$Estrella1.show()
+	if Global.escena_anerior == "res://Scenes/mapa_prueba.tscn":
+		Global.nivell1_enable = true
 
 func _on_menu_pressed():
 	get_tree().change_scene_to_file("res://Scenes/interfaz.tscn") # Replace with function body.
