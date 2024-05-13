@@ -5,7 +5,7 @@ extends Node2D
 func _ready():
 	Global.monedes = 0
 	Global.claus = 0
-	Global.mobedes_necessaries = 40
+	Global.pollastres_necessaris = 40
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

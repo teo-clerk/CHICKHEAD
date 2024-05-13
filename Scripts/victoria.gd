@@ -12,6 +12,10 @@ func _ready():
 		$Estrella1.show()
 	if Global.escena_anerior == "res://Scenes/mapa_prueba.tscn":
 		Global.nivell1_enable = true
+	elif Global.escena_anerior == "res://Scenes/mapa0.tscn":
+		Global.nivell2_enable = true
+	elif Global.escena_anerior == "res://Scenes/mapa_1.tscn":
+		Global.nivell3_enable = true
 
 func _on_menu_pressed():
 	get_tree().change_scene_to_file("res://Scenes/interfaz.tscn") # Replace with function body.
