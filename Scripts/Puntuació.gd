@@ -8,4 +8,4 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	text = str(Global.claus)
+	text = str(Global.claus)+"/"+str(Global.claus_necessaries)
