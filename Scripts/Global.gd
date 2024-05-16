@@ -9,3 +9,4 @@ var pollastres_necessaris := 0
 var nivell1_enable := false
 var nivell2_enable := false
 var nivell3_enable := false
+var cap = false

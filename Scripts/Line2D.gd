@@ -31,7 +31,6 @@ func _process(delta):
 		var vy = vpos[1]
 		clear_points()
 		add_point(Vector2(0, 0), -1)
-		var lastpoint = -1
 		var y = 0
 		for x in range(1000):
 			if vx > 0:
