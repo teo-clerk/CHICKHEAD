@@ -1447,13 +1447,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -377.0
-offset_top = -53.0
-offset_right = 377.0
-offset_bottom = -7.0
+offset_left = -461.0
+offset_top = -72.0
+offset_right = 461.0
+offset_bottom = -26.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 200
+theme_override_constants/separation = 150
 
 [node name="Nivells" type="Button" parent="Butons/HBoxContainer"]
 layout_mode = 2
@@ -1495,6 +1495,12 @@ script = ExtResource("10_dyymi")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Butons/HBoxContainer/Sortir/StaticBody2D"]
 position = Vector2(50.5, 22.5)
 shape = SubResource("RectangleShape2D_j2m6e")
+
+[node name="Button" type="Button" parent="Butons/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_hlpc5")
+theme_override_font_sizes/font_size = 35
+text = "OPCIONS"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("13_xfeov")
