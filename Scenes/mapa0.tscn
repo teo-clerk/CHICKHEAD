@@ -1,21 +1,20 @@
-[gd_scene load_steps=21 format=3 uid="uid://di6pk5fs4p4ci"]
+[gd_scene load_steps=20 format=3 uid="uid://di6pk5fs4p4ci"]
 
 [ext_resource type="Script" path="res://Scripts/mapa0.gd" id="1_ekkw8"]
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="2_mpc1l"]
 [ext_resource type="Texture2D" uid="uid://b0yvvr2xjlodn" path="res://Resources/Tilemaps/Cyber_2/Assets/Props-01.png" id="3_blnqu"]
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="4_2lypf"]
-[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/porta.tscn" id="4_n3na5"]
+[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/Porta.tscn" id="4_n3na5"]
 [ext_resource type="PackedScene" uid="uid://c3gce40a68k5g" path="res://Scenes/rayo.tscn" id="5_f7sq7"]
 [ext_resource type="PackedScene" uid="uid://bg4us3bt7b60x" path="res://Scenes/parallax_background.tscn" id="6_ukxrf"]
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="7_wugbm"]
 [ext_resource type="PackedScene" uid="uid://bdtlfebfm187c" path="res://Scenes/clau.tscn" id="8_f32hv"]
 [ext_resource type="Texture2D" uid="uid://bdr1xkfj5o3fo" path="res://pixil-frame-0(13).png" id="9_dbjus"]
 [ext_resource type="PackedScene" uid="uid://bwppkoqx0wytc" path="res://Scenes/jugador.tscn" id="10_ml6ct"]
-[ext_resource type="Script" path="res://Scripts/Ultima_escenaMapa0.gd" id="11_l4fdn"]
-[ext_resource type="Script" path="res://Scripts/Global.gd" id="12_lx5eb"]
 [ext_resource type="PackedScene" uid="uid://ca6ton52sif71" path="res://Scenes/canvas_layer.tscn" id="12_sdv1r"]
 [ext_resource type="PackedScene" uid="uid://bvoxyc8e4k3y5" path="res://Scenes/moneda_normal.tscn" id="14_fkwep"]
 [ext_resource type="PackedScene" uid="uid://djpn4r1ikeehw" path="res://Scenes/moneda_dorada.tscn" id="15_gqm3e"]
+[ext_resource type="Script" path="res://Scenes/ConfiguracoNivell0.gd" id="15_qgjxk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y1eec"]
 texture = ExtResource("2_mpc1l")
@@ -1643,17 +1642,7 @@ limit_left = -48
 limit_top = 0
 limit_bottom = 0
 
-[node name="Ultima_escenaMapa0" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("11_l4fdn")
-
 [node name="CanvasLayer" parent="." instance=ExtResource("12_sdv1r")]
-
-[node name="Global" type="Node" parent="."]
-script = ExtResource("12_lx5eb")
 
 [node name="MonedaNormal" parent="." instance=ExtResource("14_fkwep")]
 position = Vector2(308, 397)
@@ -1750,5 +1739,8 @@ position = Vector2(4895, 270)
 
 [node name="MonedaNormal28" parent="." instance=ExtResource("14_fkwep")]
 position = Vector2(4630, 362)
+
+[node name="ConfiguracoNivell" type="Node" parent="."]
+script = ExtResource("15_qgjxk")
 
 [editable path="Node2D"]
