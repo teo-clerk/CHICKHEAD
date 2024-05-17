@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://b7sl0dewfy4t8"]
 
-[ext_resource type="Script" path="res://Scenes/cap de pollo.gd" id="1_xovld"]
+[ext_resource type="Script" path="res://Scripts/cap de pollo.gd" id="1_xovld"]
 [ext_resource type="Texture2D" uid="uid://cg06ak6cwvk1c" path="res://Resources/cap .png" id="2_34l3r"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xu1lk"]

@@ -1,6 +1,8 @@
 extends Node2D
 
 func _ready():
+	if Global.cap_prov:
+		Global.cap = true
 	if Global.pollastres_necessaris == Global.monedes:
 		$Estrella1.show()
 		$Estrella2.show()
