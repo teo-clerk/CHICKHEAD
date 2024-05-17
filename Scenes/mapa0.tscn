@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="2_mpc1l"]
 [ext_resource type="Texture2D" uid="uid://b0yvvr2xjlodn" path="res://Resources/Tilemaps/Cyber_2/Assets/Props-01.png" id="3_blnqu"]
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="4_2lypf"]
-[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/Porta.tscn" id="4_n3na5"]
+[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/porta.tscn" id="4_n3na5"]
 [ext_resource type="PackedScene" uid="uid://c3gce40a68k5g" path="res://Scenes/rayo.tscn" id="5_f7sq7"]
 [ext_resource type="PackedScene" uid="uid://bg4us3bt7b60x" path="res://Scenes/parallax_background.tscn" id="6_ukxrf"]
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="7_wugbm"]
@@ -1749,12 +1749,10 @@ script = ExtResource("15_qgjxk")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("16_vncnt")
 volume_db = -14.563
-autoplay = true
 script = ExtResource("17_ubfwp")
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("18_6tmcp")
-autoplay = true
 script = ExtResource("17_ubfwp")
 
 [editable path="Node2D"]

@@ -132,7 +132,6 @@ shape = SubResource("RectangleShape2D_n0w7q")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("13_xfeov")
 volume_db = 7.913
-autoplay = true
 script = ExtResource("15_rslox")
 
 [node name="TileMap" parent="." instance=ExtResource("13_bng83")]

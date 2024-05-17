@@ -1530,7 +1530,6 @@ width = 4.0
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("9_tc5rg")
 volume_db = 7.913
-autoplay = true
 script = ExtResource("11_r0ord")
 
 [connection signal="pressed" from="Butons/TornarAlMenú" to="Butons/TornarAlMenú" method="_on_pressed"]

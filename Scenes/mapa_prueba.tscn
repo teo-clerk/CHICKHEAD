@@ -1504,12 +1504,10 @@ layer_0/tile_data = PackedInt32Array(65534, 0, 2, 131070, 0, 3, 65535, 65536, 2,
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_e0yxo")
 volume_db = -14.563
-autoplay = true
 script = ExtResource("12_l1jo5")
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_bfevi")
-autoplay = true
 script = ExtResource("12_l1jo5")
 
 [node name="CanvasLayer" parent="." instance=ExtResource("12_05xru")]
