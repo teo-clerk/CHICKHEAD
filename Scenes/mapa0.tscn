@@ -1754,5 +1754,6 @@ script = ExtResource("17_ubfwp")
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("18_6tmcp")
 script = ExtResource("17_ubfwp")
+plays = 2
 
 [editable path="Node2D"]

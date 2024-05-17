@@ -1507,6 +1507,7 @@ script = ExtResource("2_p1rd5")
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_fhvtq")
 script = ExtResource("2_p1rd5")
+plays = 2
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
