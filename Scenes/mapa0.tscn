@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://di6pk5fs4p4ci"]
+[gd_scene load_steps=21 format=3 uid="uid://di6pk5fs4p4ci"]
 
 [ext_resource type="Script" path="res://Scripts/mapa0.gd" id="1_ekkw8"]
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="2_mpc1l"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://bvoxyc8e4k3y5" path="res://Scenes/moneda_normal.tscn" id="14_fkwep"]
 [ext_resource type="PackedScene" uid="uid://djpn4r1ikeehw" path="res://Scenes/moneda_dorada.tscn" id="15_gqm3e"]
 [ext_resource type="Script" path="res://Scenes/ConfiguracoNivell0.gd" id="15_qgjxk"]
+[ext_resource type="AudioStream" uid="uid://dkkj4ia8ajbbq" path="res://Resources/Musica/581358__podcapocalipsis__another-melody-for-a-indie-videogame-or-something.wav" id="16_vncnt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y1eec"]
 texture = ExtResource("2_mpc1l")
@@ -1742,5 +1743,10 @@ position = Vector2(4630, 362)
 
 [node name="ConfiguracoNivell" type="Node" parent="."]
 script = ExtResource("15_qgjxk")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_vncnt")
+volume_db = -14.563
+autoplay = true
 
 [editable path="Node2D"]
