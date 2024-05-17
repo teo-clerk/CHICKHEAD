@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://blb2wk4u27hn7"]
+[gd_scene load_steps=3 format=3 uid="uid://blb2wk4u27hn7"]
 
 [ext_resource type="Script" path="res://Node2D.gd" id="1_r1u7n"]
+[ext_resource type="FontFile" uid="uid://cb17cvhmehftu" path="res://Fonts/arcadeclassic/ARCADECLASSIC.TTF" id="2_4uaky"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_r1u7n")
@@ -15,13 +16,15 @@ offset_left = 37.0
 offset_top = 55.0
 offset_right = 547.0
 offset_bottom = 234.0
+theme_override_fonts/font = ExtResource("2_4uaky")
+theme_override_font_sizes/font_size = 25
 text = "Creadors: Marc Perez, Teo Clerici, Jan Ferrer
 
 Tile Map: https://anokolisa.itch.io/sidescroller-shooter-central-city
 
 Background: Ansimuz https://www.youtube.com/@ansimuz
 
-Musica: Panda Beats - https://www.youtube.com/@PandaBeatsMusic
+Música: Panda Beats - https://www.youtube.com/@PandaBeatsMusic
 "
 
 [node name="Button" type="Button" parent="."]
