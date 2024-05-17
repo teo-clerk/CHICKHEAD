@@ -38,18 +38,18 @@ func _physics_process(delta):
 	
 	if Input.is_action_pressed('espai') and is_on_floor() == false and velocity.y >= 0:
 		gravity = 300
-		if Global.cap == true:
+		if Global.cap == true or Global.cap_prov == true:
 			$AnimatedSprite2D.play('volant cap')
 		else:
 			$AnimatedSprite2D.play('planejant')
 	elif is_on_floor() == false:
 		gravity = 980
-		if Global.cap == true:
+		if Global.cap == true or Global.cap_prov == true:
 			$AnimatedSprite2D.play('disparat cap')
 		else:
 			$AnimatedSprite2D.play('movense_volant')
 	else:
-		if Global.cap == true:
+		if Global.cap == true or Global.cap_prov == true:
 			$AnimatedSprite2D.play('quiet cap')
 		else:
 			$AnimatedSprite2D.play('normal')

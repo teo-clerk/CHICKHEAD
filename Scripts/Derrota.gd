@@ -1,6 +1,7 @@
 extends Node2D
 
 func _ready():
+	Global.cap_prov = false
 	Global.claus = 0
 	Global.monedes = 0
 func _on_tornar_a_intentar_pressed():
