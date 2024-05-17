@@ -11,3 +11,4 @@ var nivell2_enable := false
 var nivell3_enable := false
 var cap_prov = false
 var cap = false
+var music = true

@@ -1,19 +1,11 @@
-[gd_scene load_steps=19 format=3 uid="uid://f25a5jann35e"]
+[gd_scene load_steps=8 format=3 uid="uid://bsg15765evsys"]
 
-[ext_resource type="Script" path="res://Scenes/opcions.gd" id="1_axstt"]
-[ext_resource type="Texture2D" uid="uid://bfbsnux3naqaw" path="res://Resources/Base Color.png" id="1_g37vd"]
-[ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="2_q02qf"]
-[ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="3_7xlgu"]
-[ext_resource type="Texture2D" uid="uid://b0yvvr2xjlodn" path="res://Resources/Tilemaps/Cyber_2/Assets/Props-01.png" id="4_qdq6x"]
-[ext_resource type="PackedScene" uid="uid://bwppkoqx0wytc" path="res://Scenes/jugador.tscn" id="5_37s1c"]
-[ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Fonts/8-bit-limit/8bitlimr.ttf" id="6_pa1o1"]
-[ext_resource type="PackedScene" uid="uid://bvoxyc8e4k3y5" path="res://Scenes/moneda_normal.tscn" id="7_enldd"]
-[ext_resource type="Script" path="res://Scripts/TornarAlMenú.gd" id="8_2ea1a"]
-[ext_resource type="AudioStream" uid="uid://csiremfy62jr1" path="res://Resources/Musica/Sport Cyberpunk G-House by Infraction [No Copyright Music] - Shock Absorber (320).mp3" id="9_tc5rg"]
-[ext_resource type="Script" path="res://Scenes/Muisca.gd" id="11_r0ord"]
+[ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="1_8rhu8"]
+[ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="2_0m5ol"]
+[ext_resource type="Texture2D" uid="uid://b0yvvr2xjlodn" path="res://Resources/Tilemaps/Cyber_2/Assets/Props-01.png" id="3_qoncb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
-texture = ExtResource("2_q02qf")
+texture = ExtResource("1_8rhu8")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -232,7 +224,7 @@ texture = ExtResource("2_q02qf")
 5:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8jcx1"]
-texture = ExtResource("3_7xlgu")
+texture = ExtResource("2_0m5ol")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -1087,7 +1079,7 @@ texture = ExtResource("3_7xlgu")
 2:14/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m8n7f"]
-texture = ExtResource("4_qdq6x")
+texture = ExtResource("3_qoncb")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -1383,155 +1375,14 @@ texture = ExtResource("4_qdq6x")
 4:13/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 4:13/0/physics_layer_0/angular_velocity = 0.0
 
-[sub_resource type="TileSet" id="TileSet_7ud1x"]
+[sub_resource type="TileSet" id="TileSet_6ejmn"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_h72a1")
 sources/1 = SubResource("TileSetAtlasSource_8jcx1")
 sources/2 = SubResource("TileSetAtlasSource_m8n7f")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_btmxv"]
-size = Vector2(136, 47)
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a848x"]
-radius = 8.0
-height = 32.0
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pmjjk"]
-size = Vector2(118, 47)
-
-[node name="Opcions" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_axstt")
-
-[node name="BaseColor" type="Sprite2D" parent="."]
-position = Vector2(482, 273.5)
-scale = Vector2(2.025, 1.70313)
-texture = ExtResource("1_g37vd")
-
-[node name="TileMap" type="TileMap" parent="."]
+[node name="TileMap" type="TileMap"]
 scale = Vector2(2, 2)
-tile_set = SubResource("TileSet_7ud1x")
+tile_set = SubResource("TileSet_6ejmn")
 format = 2
 layer_0/tile_data = PackedInt32Array(983040, 0, 5, 1048576, 0, 6, 983041, 65536, 5, 1048577, 65536, 6, 983042, 0, 2, 1048578, 0, 3, 983043, 65536, 2, 1048579, 65536, 3, 983044, 0, 2, 1048580, 0, 3, 983045, 65536, 2, 1048581, 65536, 3, 983046, 0, 2, 1048582, 0, 3, 983047, 65536, 2, 1048583, 65536, 3, 983048, 0, 2, 1048584, 0, 3, 983049, 65536, 2, 1048585, 65536, 3, 983050, 0, 2, 1048586, 0, 3, 983051, 65536, 2, 1048587, 65536, 3, 983052, 0, 2, 1048588, 0, 3, 983053, 65536, 2, 1048589, 65536, 3, 983054, 0, 2, 1048590, 0, 3, 983055, 65536, 2, 1048591, 65536, 3, 983056, 0, 2, 1048592, 0, 3, 983057, 65536, 2, 1048593, 65536, 3, 983058, 0, 2, 1048594, 0, 3, 983059, 65536, 2, 1048595, 65536, 3, 983060, 0, 2, 1048596, 0, 3, 983061, 65536, 2, 1048597, 65536, 3, 983062, 0, 2, 1048598, 0, 3, 983063, 65536, 2, 1048599, 65536, 3, 983064, 0, 2, 1048600, 0, 3, 983065, 65536, 2, 1048601, 65536, 3, 983066, 0, 2, 1048602, 0, 3, 983067, 65536, 2, 1048603, 65536, 3, 983068, 0, 5, 1048604, 0, 6, 983069, 65536, 5, 1048605, 65536, 6, 30, 0, 2, 65566, 0, 3, 31, 65536, 2, 65567, 65536, 3, 131102, 0, 2, 196638, 0, 3, 131103, 65536, 2, 196639, 65536, 3, 262174, 0, 2, 327710, 0, 3, 262175, 65536, 2, 327711, 65536, 3, 393246, 0, 2, 458782, 0, 3, 393247, 65536, 2, 458783, 65536, 3, 524318, 0, 2, 589854, 0, 3, 524319, 65536, 2, 589855, 65536, 3, 655390, 0, 2, 720926, 0, 3, 655391, 65536, 2, 720927, 65536, 3, 786462, 0, 2, 851998, 0, 3, 786463, 65536, 2, 851999, 65536, 3, 917534, 0, 2, 983070, 0, 3, 917535, 65536, 2, 983071, 65536, 3, 65534, 0, 2, 131070, 0, 3, 65535, 65536, 2, 131071, 65536, 3, 196606, 0, 2, 262142, 0, 3, 196607, 65536, 2, 262143, 65536, 3, 327678, 0, 2, 393214, 0, 3, 327679, 65536, 2, 393215, 65536, 3, 458750, 0, 2, 524286, 0, 3, 458751, 65536, 2, 524287, 65536, 3, 589822, 0, 2, 655358, 0, 3, 589823, 65536, 2, 655359, 65536, 3, 720894, 0, 2, 786430, 0, 3, 720895, 65536, 2, 786431, 65536, 3, 851966, 0, 2, 917502, 0, 3, 851967, 65536, 2, 917503, 65536, 3, 983038, 0, 2, 1048574, 0, 3, 983039, 65536, 2, 1048575, 65536, 3, 786460, 131072, 7, 851996, 131072, 8, 786461, 196608, 7, 851997, 196608, 8, 851994, 131072, 7, 917530, 131072, 8, 851995, 196608, 7, 917531, 196608, 8, 786432, 0, 7, 851968, 0, 8, 786433, 65536, 7, 851969, 65536, 8, 851970, 0, 7, 917506, 0, 8, 851971, 65536, 7, 917507, 65536, 8, 917504, 0, 4, 917505, 65536, 4, 917532, 0, 4, 917533, 65536, 4, 917528, 131072, 7, 917529, 196608, 7, 917508, 0, 7, 917509, 65536, 7, -65538, 0, 2, -2, 0, 3, -65537, 65536, 2, -1, 65536, 3, -131072, 0, 2, -65536, 0, 3, -131071, 65536, 2, -65535, 65536, 3, -131070, 0, 2, -65534, 0, 3, -131069, 65536, 2, -65533, 65536, 3, -131068, 0, 2, -65532, 0, 3, -131067, 65536, 2, -65531, 65536, 3, -131066, 0, 2, -65530, 0, 3, -131065, 65536, 2, -65529, 65536, 3, -131064, 0, 2, -65528, 0, 3, -131063, 65536, 2, -65527, 65536, 3, -131062, 0, 2, -65526, 0, 3, -131061, 65536, 2, -65525, 65536, 3, -131060, 0, 2, -65524, 0, 3, -131059, 65536, 2, -65523, 65536, 3, -131058, 0, 2, -65522, 0, 3, -131057, 65536, 2, -65521, 65536, 3, -131056, 0, 2, -65520, 0, 3, -131055, 65536, 2, -65519, 65536, 3, -131054, 0, 2, -65518, 0, 3, -131053, 65536, 2, -65517, 65536, 3, -131052, 0, 2, -65516, 0, 3, -131051, 65536, 2, -65515, 65536, 3, -131050, 0, 2, -65514, 0, 3, -131049, 65536, 2, -65513, 65536, 3, -131048, 0, 2, -65512, 0, 3, -131047, 65536, 2, -65511, 65536, 3, -131046, 0, 2, -65510, 0, 3, -131045, 65536, 2, -65509, 65536, 3, -131044, 0, 2, -65508, 0, 3, -131043, 65536, 2, -65507, 65536, 3, -131042, 0, 2, -65506, 0, 3, -131041, 65536, 2, -65505, 65536, 3)
-
-[node name="Jugador" parent="." instance=ExtResource("5_37s1c")]
-position = Vector2(44, 52)
-
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-custom_minimum_size = Vector2(0, 50)
-offset_left = 2.0
-offset_top = 60.0
-offset_right = 962.0
-offset_bottom = 188.0
-theme_override_fonts/normal_font = ExtResource("6_pa1o1")
-theme_override_font_sizes/normal_font_size = 90
-bbcode_enabled = true
-text = "[center]OPC ONS[/center]"
-
-[node name="MonedaNormal" parent="." instance=ExtResource("7_enldd")]
-position = Vector2(471, 97)
-rotation = 2.27067
-scale = Vector2(2.5, 2.5)
-
-[node name="Butons" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -3.0
-offset_top = 100.0
-offset_right = -3.0
-offset_bottom = 4.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="TornarAlMenú" type="Button" parent="Butons"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -72.0
-offset_top = -163.0
-offset_right = 64.0
-offset_bottom = -117.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_fonts/font = ExtResource("6_pa1o1")
-theme_override_font_sizes/font_size = 35
-text = "TORNAR"
-script = ExtResource("8_2ea1a")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Butons/TornarAlMenú"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Butons/TornarAlMenú/StaticBody2D"]
-position = Vector2(68, 22.5)
-shape = SubResource("RectangleShape2D_btmxv")
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Butons"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -164.5
-offset_top = -79.5
-offset_right = 164.5
-offset_bottom = -48.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 167
-
-[node name="CheckButton" type="CheckButton" parent="Butons/HBoxContainer"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("6_pa1o1")
-theme_override_font_sizes/font_size = 35
-text = "MUSICA"
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Butons/HBoxContainer/CheckButton"]
-position = Vector2(-63, -235)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Butons/HBoxContainer/CheckButton/StaticBody2D"]
-position = Vector2(182, 258)
-rotation = 1.5708
-shape = SubResource("CapsuleShape2D_a848x")
-
-[node name="Button" type="Button" parent="Butons/HBoxContainer"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("6_pa1o1")
-theme_override_font_sizes/font_size = 35
-text = "CREDITS"
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Butons/HBoxContainer/Button"]
-position = Vector2(-274, -235)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Butons/HBoxContainer/Button/StaticBody2D"]
-position = Vector2(333, 258.5)
-shape = SubResource("RectangleShape2D_pmjjk")
-
-[node name="MUSI_ACC" type="Line2D" parent="Butons"]
-position = Vector2(-28.61, 0)
-points = PackedVector2Array(327, 136, 334, 127)
-width = 4.0
-
-[node name="CRE_ACC" type="Line2D" parent="Butons"]
-position = Vector2(8.985, 0)
-points = PackedVector2Array(611, 134, 602, 126)
-width = 4.0
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("9_tc5rg")
-volume_db = 7.913
-autoplay = true
-script = ExtResource("11_r0ord")
-
-[connection signal="pressed" from="Butons/TornarAlMenú" to="Butons/TornarAlMenú" method="_on_pressed"]
-[connection signal="pressed" from="Butons/HBoxContainer/CheckButton" to="." method="_on_check_button_pressed"]
-[connection signal="pressed" from="Butons/HBoxContainer/Button" to="." method="_on_button_pressed"]

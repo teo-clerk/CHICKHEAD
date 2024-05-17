@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://ccjrpgi7gsych"]
+[gd_scene load_steps=22 format=3 uid="uid://ccjrpgi7gsych"]
 
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="1_cffki"]
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="2_lt1oy"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://djpn4r1ikeehw" path="res://Scenes/moneda_dorada.tscn" id="11_8xl73"]
 [ext_resource type="AudioStream" uid="uid://bivx18si1gkax" path="res://Resources/Musica/epic-hybrid-logo-157092.mp3" id="11_bfevi"]
 [ext_resource type="PackedScene" uid="uid://ca6ton52sif71" path="res://Scenes/canvas_layer.tscn" id="12_05xru"]
+[ext_resource type="Script" path="res://Scenes/Muisca.gd" id="12_l1jo5"]
 [ext_resource type="PackedScene" uid="uid://bdtlfebfm187c" path="res://Scenes/clau.tscn" id="12_r5sxj"]
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="13_4lg6r"]
 [ext_resource type="PackedScene" uid="uid://c3gce40a68k5g" path="res://Scenes/rayo.tscn" id="13_n25qe"]
@@ -1505,10 +1506,12 @@ layer_0/tile_data = PackedInt32Array(65534, 0, 2, 131070, 0, 3, 65535, 65536, 2,
 stream = ExtResource("10_e0yxo")
 volume_db = -14.563
 autoplay = true
+script = ExtResource("12_l1jo5")
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_bfevi")
 autoplay = true
+script = ExtResource("12_l1jo5")
 
 [node name="CanvasLayer" parent="." instance=ExtResource("12_05xru")]
 

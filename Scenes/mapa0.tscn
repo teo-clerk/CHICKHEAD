@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://di6pk5fs4p4ci"]
+[gd_scene load_steps=23 format=3 uid="uid://di6pk5fs4p4ci"]
 
 [ext_resource type="Script" path="res://Scripts/mapa0.gd" id="1_ekkw8"]
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="2_mpc1l"]
@@ -16,6 +16,8 @@
 [ext_resource type="PackedScene" uid="uid://djpn4r1ikeehw" path="res://Scenes/moneda_dorada.tscn" id="15_gqm3e"]
 [ext_resource type="Script" path="res://Scenes/ConfiguracoNivell0.gd" id="15_qgjxk"]
 [ext_resource type="AudioStream" uid="uid://dkkj4ia8ajbbq" path="res://Resources/Musica/581358__podcapocalipsis__another-melody-for-a-indie-videogame-or-something.wav" id="16_vncnt"]
+[ext_resource type="Script" path="res://Scenes/Muisca.gd" id="17_ubfwp"]
+[ext_resource type="AudioStream" uid="uid://bivx18si1gkax" path="res://Resources/Musica/epic-hybrid-logo-157092.mp3" id="18_6tmcp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y1eec"]
 texture = ExtResource("2_mpc1l")
@@ -1748,5 +1750,11 @@ script = ExtResource("15_qgjxk")
 stream = ExtResource("16_vncnt")
 volume_db = -14.563
 autoplay = true
+script = ExtResource("17_ubfwp")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_6tmcp")
+autoplay = true
+script = ExtResource("17_ubfwp")
 
 [editable path="Node2D"]

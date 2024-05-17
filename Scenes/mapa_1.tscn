@@ -1,7 +1,8 @@
-[gd_scene load_steps=21 format=3 uid="uid://pwuok1fnhkix"]
+[gd_scene load_steps=22 format=3 uid="uid://pwuok1fnhkix"]
 
 [ext_resource type="Script" path="res://Scripts/ConfiguracioMapa1.gd" id="2_o2hto"]
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="3_6nn5r"]
+[ext_resource type="Script" path="res://Scenes/Muisca.gd" id="3_ofgba"]
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="4_u2vqb"]
 [ext_resource type="Texture2D" uid="uid://b0yvvr2xjlodn" path="res://Resources/Tilemaps/Cyber_2/Assets/Props-01.png" id="5_uhkv2"]
 [ext_resource type="PackedScene" uid="uid://bwppkoqx0wytc" path="res://Scenes/jugador.tscn" id="6_o3p4c"]
@@ -1467,10 +1468,12 @@ script = ExtResource("2_o2hto")
 stream = ExtResource("10_y2ug1")
 volume_db = -14.563
 autoplay = true
+script = ExtResource("3_ofgba")
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_wce08")
 autoplay = true
+script = ExtResource("3_ofgba")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
