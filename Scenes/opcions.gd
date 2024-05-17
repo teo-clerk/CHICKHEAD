@@ -19,6 +19,7 @@ func _process(delta):
 
 func _on_button_pressed():
 	pass
+	#get_tree().change_scene_to_file()
 	 # Replace with function body.
 
 
