@@ -1424,6 +1424,7 @@ position = Vector2(44, 52)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 custom_minimum_size = Vector2(0, 50)
+layout_mode = 0
 offset_left = 2.0
 offset_top = 60.0
 offset_right = 962.0

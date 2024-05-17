@@ -18,8 +18,7 @@ func _process(delta):
 
 
 func _on_button_pressed():
-	pass
-	 # Replace with function body.
+	get_tree().change_scene_to_file("res://Scenes/credits.tscn")
 
 
 func _on_check_button_pressed():

@@ -11,17 +11,17 @@ offset_bottom = 542.0
 color = Color(0.619608, 0.164706, 0.431373, 1)
 
 [node name="Label" type="Label" parent="."]
-offset_left = 46.0
-offset_top = 50.0
-offset_right = 556.0
-offset_bottom = 229.0
+offset_left = 37.0
+offset_top = 55.0
+offset_right = 547.0
+offset_bottom = 234.0
 text = "Creadors: Marc Perez, Teo Clerici, Jan Ferrer
 
 Tile Map: https://anokolisa.itch.io/sidescroller-shooter-central-city
 
 Background: Ansimuz https://www.youtube.com/@ansimuz
 
-Musica 
+Musica: Panda Beats - https://www.youtube.com/@PandaBeatsMusic
 "
 
 [node name="Button" type="Button" parent="."]
