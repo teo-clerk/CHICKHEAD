@@ -15,7 +15,7 @@
 [ext_resource type="Script" path="res://Scripts/TornarAlMenú.gd" id="11_mwhfi"]
 [ext_resource type="PackedScene" uid="uid://b14yhr8ofc81" path="res://Scenes/mapa_2.tscn" id="12_ttaqq"]
 [ext_resource type="AudioStream" uid="uid://csiremfy62jr1" path="res://Resources/Musica/Sport Cyberpunk G-House by Infraction [No Copyright Music] - Shock Absorber (320).mp3" id="15_pr0gi"]
-[ext_resource type="Script" path="res://Scenes/Cerradura.gd" id="16_a4xle"]
+[ext_resource type="Script" path="res://Scripts/Cerradura.gd" id="16_a4xle"]
 [ext_resource type="Texture2D" uid="uid://5406w1vlpvcd" path="res://Resources/cerradura.png" id="16_kqwxw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]

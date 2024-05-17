@@ -12,5 +12,5 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	Global.cap = true
+	Global.cap_prov = true
 	queue_free()
