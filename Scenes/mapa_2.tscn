@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scenes/Muisca.gd" id="2_p1rd5"]
 [ext_resource type="AudioStream" uid="uid://bivx18si1gkax" path="res://Resources/Musica/epic-hybrid-logo-157092.mp3" id="3_fhvtq"]
 [ext_resource type="Texture2D" uid="uid://dtvv1b47r0g0f" path="res://Resources/bacground/cyberpunk-street-files/Version 1/PNG/layers/far-buildings.png" id="4_kja4t"]
-[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/porta.tscn" id="4_omjv7"]
+[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/Porta.tscn" id="4_omjv7"]
 [ext_resource type="Texture2D" uid="uid://bplmse2w7pxyh" path="res://Resources/bacground/cyberpunk-street-files/Version 1/PNG/layers/back-buildings.png" id="5_k8wic"]
 [ext_resource type="Texture2D" uid="uid://7onhoxrjm1j2" path="res://Resources/bacground/cyberpunk-street-files/Version 1/PNG/layers/foreground.png" id="6_6siar"]
 [ext_resource type="Texture2D" uid="uid://i5evap8qbchv" path="res://Resources/Tilemaps/Cyber_2/Assets/Tiles.png" id="7_1uu81"]

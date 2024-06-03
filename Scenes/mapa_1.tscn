@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://ca6ton52sif71" path="res://Scenes/canvas_layer.tscn" id="13_oewjk"]
 [ext_resource type="PackedScene" uid="uid://bdtlfebfm187c" path="res://Scenes/clau.tscn" id="14_jnpur"]
 [ext_resource type="PackedScene" uid="uid://bvoxyc8e4k3y5" path="res://Scenes/moneda_normal.tscn" id="15_4jwcy"]
-[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/porta.tscn" id="15_q00mb"]
+[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/Porta.tscn" id="15_q00mb"]
 [ext_resource type="PackedScene" uid="uid://djpn4r1ikeehw" path="res://Scenes/moneda_dorada.tscn" id="16_43h5f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]

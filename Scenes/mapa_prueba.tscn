@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://sa6pi0oxnk6a" path="res://Scenes/pinchos.tscn" id="13_4lg6r"]
 [ext_resource type="PackedScene" uid="uid://c3gce40a68k5g" path="res://Scenes/rayo.tscn" id="13_n25qe"]
 [ext_resource type="Script" path="res://Scripts/ConfiguracioTutorial.gd" id="14_lgqn6"]
-[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/porta.tscn" id="15_y2qpd"]
+[ext_resource type="PackedScene" uid="uid://cy7lwd5n486pq" path="res://Scenes/Porta.tscn" id="15_y2qpd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h72a1"]
 texture = ExtResource("1_cffki")
