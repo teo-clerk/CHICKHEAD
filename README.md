@@ -51,4 +51,4 @@ The repository is organized as follows to keep the workspace clean and intuitive
 This project is open-source and available for educational purposes.
 
 ---
-*Created by [Your Name] for a High School Research Project.*
+*Created by Marc Pérez, Jan Ferrer, Teo Clerici for a High School Research Project.*
