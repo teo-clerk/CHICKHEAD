@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://blb2wk4u27hn7"]
 
-[ext_resource type="Script" path="res://Node2D.gd" id="1_r1u7n"]
-[ext_resource type="FontFile" uid="uid://cb17cvhmehftu" path="res://Fonts/arcadeclassic/ARCADECLASSIC.TTF" id="2_4uaky"]
+[ext_resource type="Script" path="res://Scripts/CreditsMenu.gd" id="1_r1u7n"]
+[ext_resource type="FontFile" uid="uid://cb17cvhmehftu" path="res://Resources/Fonts/arcadeclassic/ARCADECLASSIC.TTF" id="2_4uaky"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_r1u7n")

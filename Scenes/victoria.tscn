@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Scripts/victoria.gd" id="1_kqkuu"]
 [ext_resource type="Texture2D" uid="uid://bfbsnux3naqaw" path="res://Resources/Base Color.png" id="1_s61r2"]
-[ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Fonts/8-bit-limit/8bitlimr.ttf" id="2_grkmi"]
-[ext_resource type="Texture2D" uid="uid://c2e3k4k4istde" path="res://Fonts/8-bit-limit/Accent.png" id="3_4ixcr"]
+[ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Resources/Fonts/8-bit-limit/8bitlimr.ttf" id="2_grkmi"]
+[ext_resource type="Texture2D" uid="uid://c2e3k4k4istde" path="res://Resources/Fonts/8-bit-limit/Accent.png" id="3_4ixcr"]
 [ext_resource type="Texture2D" uid="uid://q03beugv5lju" path="res://Resources/star_PNG41495.png" id="5_vcdu0"]
 
 [node name="Victoria" type="Node2D"]

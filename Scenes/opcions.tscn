@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dcbxb6nu431s7" path="res://Resources/Tilemaps/Cyber_2/Assets/Buildings.png" id="3_7xlgu"]
 [ext_resource type="Texture2D" uid="uid://b0yvvr2xjlodn" path="res://Resources/Tilemaps/Cyber_2/Assets/Props-01.png" id="4_qdq6x"]
 [ext_resource type="PackedScene" uid="uid://bwppkoqx0wytc" path="res://Scenes/jugador.tscn" id="5_37s1c"]
-[ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Fonts/8-bit-limit/8bitlimr.ttf" id="6_pa1o1"]
+[ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Resources/Fonts/8-bit-limit/8bitlimr.ttf" id="6_pa1o1"]
 [ext_resource type="PackedScene" uid="uid://bvoxyc8e4k3y5" path="res://Scenes/moneda_normal.tscn" id="7_enldd"]
 [ext_resource type="Script" path="res://Scripts/TornarAlMenú.gd" id="8_2ea1a"]
 [ext_resource type="AudioStream" uid="uid://csiremfy62jr1" path="res://Resources/Musica/Sport Cyberpunk G-House by Infraction [No Copyright Music] - Shock Absorber (320).mp3" id="9_tc5rg"]

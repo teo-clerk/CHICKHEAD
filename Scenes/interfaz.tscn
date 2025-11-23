@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bfbsnux3naqaw" path="res://Resources/Base Color.png" id="1_fl36l"]
 [ext_resource type="PackedScene" uid="uid://bwppkoqx0wytc" path="res://Scenes/jugador.tscn" id="5_21e4p"]
-[ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Fonts/8-bit-limit/8bitlimr.ttf" id="6_hlpc5"]
+[ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Resources/Fonts/8-bit-limit/8bitlimr.ttf" id="6_hlpc5"]
 [ext_resource type="PackedScene" uid="uid://bvoxyc8e4k3y5" path="res://Scenes/moneda_normal.tscn" id="7_eo1oh"]
 [ext_resource type="Script" path="res://Scripts/Nivells.gd" id="8_q71vc"]
 [ext_resource type="Script" path="res://Scripts/Tutorial.gd" id="9_nix3k"]

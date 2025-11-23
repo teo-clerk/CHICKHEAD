@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cyxleru3ieghy"]
 
-[ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Fonts/8-bit-limit/8bitlimr.ttf" id="1_n8nfi"]
+[ext_resource type="FontFile" uid="uid://dfjgmo3enloc1" path="res://Resources/Fonts/8-bit-limit/8bitlimr.ttf" id="1_n8nfi"]
 [ext_resource type="Texture2D" uid="uid://bno5nenp1iro" path="res://Resources/monedes/moneda normal/pixil-frame-0.png" id="2_i1k8n"]
 [ext_resource type="Script" path="res://Scripts/contador.gd" id="2_r8e0w"]
 

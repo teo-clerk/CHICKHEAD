@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://bdtlfebfm187c"]
 
-[ext_resource type="Texture2D" uid="uid://bc13s4yoym5vd" path="res://clau.png" id="1_0wwjh"]
+[ext_resource type="Texture2D" uid="uid://bno5nenp1iro" path="res://Resources/clau.png" id="1_j4k5l"]
 [ext_resource type="Script" path="res://Scripts/clau.gd" id="1_r2410"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_81dix"]
-atlas = ExtResource("1_0wwjh")
+atlas = ExtResource("1_j4k5l")
 region = Rect2(0, 0, 420, 320)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vy40j"]
